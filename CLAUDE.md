@@ -1,4 +1,4 @@
 <!-- claude-reflect: learned rules (saved from the band; edit freely) -->
 ## Learned rules
-- Do not make changes or do the work for the user; explain steps so the user implements improvements themselves.
+- Website copy must explicitly state that the company is based in Valls; do not remove the town name.
 <!-- end claude-reflect -->

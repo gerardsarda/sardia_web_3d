@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nosotros — SardIA</title>
-<meta name="description" content="De dónde viene el nombre SardIA, a quién ayudamos, quién está detrás y con qué herramientas trabajamos.">
+<meta name="description" content="Desde Valls, en el Camp de Tarragona, ayudamos a autónomos y negocios pequeños a modernizarse y a optimizar sus procesos, con trato directo y sin jerga.">
 <link rel="icon" type="image/png" href="assets/favicon-180.png">
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
 <meta name="robots" content="index, follow">
@@ -16,13 +16,13 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:url" content="https://sardia.es/nosotros.html">
 <meta property="og:title" content="Nosotros — SardIA">
-<meta property="og:description" content="Una consultoría que nace de los datos y que lleva el apellido de la familia en el nombre.">
+<meta property="og:description" content="Desde Valls, en el Camp de Tarragona, ayudamos a autónomos y negocios pequeños a modernizarse y a optimizar sus procesos, con trato directo y sin jerga.">
 <!-- OG image: para compartir en redes, sustituir por una imagen 1200×630px (assets/og-image.jpg) -->
 <meta property="og:image" content="https://sardia.es/assets/logo_nombre.png">
 <!-- Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Nosotros — SardIA">
-<meta name="twitter:description" content="Una consultoría que nace de los datos y que lleva el apellido de la familia en el nombre.">
+<meta name="twitter:description" content="Desde Valls, en el Camp de Tarragona, ayudamos a autónomos y negocios pequeños a modernizarse y a optimizar sus procesos, con trato directo y sin jerga.">
 <meta name="twitter:image" content="https://sardia.es/assets/logo_nombre.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,6 +59,7 @@ button,input,textarea,select{font:inherit;color:inherit}
   --pill:999px;
   --wrap:1180px;
   --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.23,1,.32,1);
   --header-h:72px;
 }
 
@@ -126,12 +127,17 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
   display:inline-flex;align-items:center;justify-content:center;gap:.5em;
   height:48px;padding:0 24px;border-radius:var(--pill);border:1px solid transparent;
   font-size:.9688rem;font-weight:500;letter-spacing:-.005em;white-space:nowrap;cursor:pointer;
-  transition:background .25s var(--ease),border-color .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease),color .25s var(--ease);
+  transition:transform 160ms var(--ease-out),background .2s var(--ease),border-color .2s var(--ease),box-shadow .2s var(--ease),color .2s var(--ease);
 }
-.btn--primary{background:var(--volt);color:#04212C;box-shadow:0 0 0 0 rgba(228,253,18,.4)}
-.btn--primary:hover{background:#F3FF5C;transform:translateY(-1px);box-shadow:0 10px 30px -12px rgba(228,253,18,.7)}
+.btn--primary{background:var(--volt);color:#04212C;box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 1px 2px rgba(0,0,0,.35)}
 .btn--ghost{background:var(--surface-2);color:var(--text);border-color:var(--line)}
-.btn--ghost:hover{background:rgba(150,196,226,.16);border-color:var(--line-strong);transform:translateY(-1px)}
+@media (hover:hover) and (pointer:fine){
+  .btn--primary:hover{background:#F3FF5C;transform:translateY(-1px);box-shadow:0 10px 30px -12px rgba(228,253,18,.7)}
+  .btn--ghost:hover{background:rgba(150,196,226,.16);border-color:var(--line-strong);transform:translateY(-1px)}
+}
+.btn:active,.burger:active{transform:translateY(0) scale(.97);transition-duration:100ms}
+.btn--primary:active{box-shadow:0 0 0 0 rgba(228,253,18,0)}
+.btn:focus-visible,.burger:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
 .btn--sm{height:40px;padding:0 18px;font-size:.9063rem}
 .btn-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 
@@ -588,11 +594,10 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
       "@id": "https://sardia.es/nosotros.html#webpage",
       "url": "https://sardia.es/nosotros.html",
       "name": "Nosotros — SardIA",
-      "description": "De dónde viene el nombre SardIA, a quién ayudamos, quién está detrás y con qué herramientas trabajamos.",
+      "description": "Desde Valls, en el Camp de Tarragona, ayudamos a autónomos y negocios pequeños a modernizarse y a optimizar sus procesos, con trato directo y sin jerga.",
       "inLanguage": "es-ES",
       "isPartOf": { "@type": "WebSite", "url": "https://sardia.es/", "name": "SardIA" },
       "about": { "@id": "https://sardia.es/#organization" },
-      "mainEntity": { "@id": "https://sardia.es/nosotros.html#gerard" },
       "dateModified": "2026-08-26"
     },
     {
@@ -602,30 +607,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
       "url": "https://sardia.es/",
       "logo": "https://sardia.es/assets/logo_nombre.png",
       "email": "hola@sardia.es",
-      "slogan": "Domina las nuevas corrientes",
-      "founder": { "@id": "https://sardia.es/nosotros.html#gerard" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://sardia.es/nosotros.html#gerard",
-      "name": "Gerard Sardà Calull",
-      "jobTitle": "Fundador · Analista de Datos e IA",
-      "worksFor": { "@id": "https://sardia.es/#organization" },
-      "homeLocation": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Valls",
-          "addressRegion": "Tarragona",
-          "addressCountry": "ES"
-        }
-      },
-      "knowsAbout": [
-        "Análisis de datos",
-        "Inteligencia artificial aplicada a negocio",
-        "Automatización de procesos",
-        "Business Intelligence"
-      ]
+      "slogan": "Domina las nuevas corrientes"
     },
     {
       "@type": "BreadcrumbList",
@@ -677,7 +659,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
   <section class="page-hero">
     <div class="wrap">
       <span class="eyebrow eyebrow--volt">Nosotros</span>
-      <h1>Empezamos por los datos.<br>Todo lo demás vino después.</h1>
+      <h1>Menos tareas a mano.<br>Más tiempo para tu negocio.</h1>
     </div>
   </section>
 
@@ -689,11 +671,11 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
           <img src="assets/logo6_fondo.png" alt="Icono de SardIA: una raya manta dibujada con una sola línea continua">
         </div>
         <div>
-          <span class="eyebrow eyebrow--volt">La marca</span>
-          <h2>Un apellido en la puerta</h2>
-          <p><b style="color:var(--text);font-weight:500">Sard<span style="color:var(--volt)">IA</span></b> junta dos cosas: el apellido de la familia, y las siglas de la inteligencia artificial.</p>
-          <p>El juego de palabras salió solo. Tener el apellido de la familia en el nombre es la manera de avisar que hay una persona real al otro lado. Cuando llamas, ya sabes con quién hablas.</p>
-          <p>El icono es una raya, un único trazo continuo del ámbar al cian. Avanza con precisión milimétrica y sin interrupciones: exactamente lo que debería pasar con tus procesos cuando están bien construidos y no dependen de parches manuales.</p>
+          <span class="eyebrow eyebrow--volt">Quiénes somos</span>
+          <h2>Una empresa cercana</h2>
+          <p>Con base en Valls, en el Camp de Tarragona, ayudamos a negocios de la zona. Sin intermediarios y sin jerga.</p>
+          <p>Ayudamos a autónomos y negocios pequeños a ordenar sus datos y a automatizar lo repetitivo, para que dediquen el tiempo a lo que de verdad importa.</p>
+          <p>Optimizamos procesos con herramientas estándar y cambios que se notan desde las primeras semanas, sin proyectos eternos.</p>
         </div>
       </div>
     </div>
@@ -706,52 +688,22 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">A quién ayudamos</span>
-        <h2>A cualquiera que trabaje con datos.<br>Es decir, a todo el mundo.</h2>
+        <h2>A autónomos y negocios pequeños<br>que quieren modernizarse.</h2>
       </div>
 
-      <div class="grid grid-4">
+      <div class="grid grid-3">
         <article class="card">
           <h3>Autónomos y negocios pequeños</h3>
           <p>El problema es que no hay tiempo para organizarse. Lo que falta es un plan, no más horas.</p>
         </article>
         <article class="card">
-          <h3>Empresas con varios departamentos</h3>
-          <p>El problema ya no es hacer el trabajo, sino que la información llegue de un área a otra sin perderse.</p>
+          <h3>Con ganas de modernizarse</h3>
+          <p>No hace falta saber de tecnología. Basta con querer dejar de hacer a mano lo que se puede automatizar.</p>
         </article>
         <article class="card">
-          <h3>Organizaciones con equipo técnico</h3>
-          <p>Capacidad de ejecución de sobra, pero sin un orden claro.</p>
+          <h3>Sin equipo técnico</h3>
+          <p>No tienes informático ni tiempo para aprender herramientas nuevas. Lo montamos nosotros y te lo dejamos funcionando.</p>
         </article>
-        <article class="card">
-          <h3>Personas y centros educativos</h3>
-          <p>Quien quiere mejorar por su cuenta, y escuelas que quieren llevar esto al aula.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- ==================== QUIÉN ESTÁ DETRÁS ==================== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">El equipo</span>
-        <h2>Quién está detrás</h2>
-      </div>
-
-      <div class="profile">
-        <!-- REVISAR: falta la foto. Sustituye este bloque por
-             <div class="media media--plain"><img src="assets/gerard.jpg" alt="Gerard Sardà"></div> -->
-        <div class="profile__photo">Foto pendiente</div>
-        <div>
-          <h3>Gerard Sardà Calull</h3>
-          <span class="profile__role">Fundador · Analista de Datos e IA</span>
-          <p>De Valls (Tarragona). Formación en negocios, datos e inteligencia artificial. He cerrado meses a mano, he cuadrado cifras que aparecían de tres maneras en tres sitios y he peleado con ERPs que nadie quería tocar. Conozco los problemas que resuelvo porque los he tenido.</p>
-          <p>Ahora los ataco desde el otro lado: datos, automatización y sentido común. Sin humo, sin dashboards que nadie mira, sin proyectos que tardan seis meses en no cambiar nada.</p>
-          <div class="chips-row" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:24px">
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -795,8 +747,8 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
       <div class="cta">
         <div class="cta__body">
           <img class="cta__mark cta__mark--mascot" src="assets/mascota.png" alt="Mascota de SardIA, una manta raya">
-          <h2>Ya sabes quién va a coger el teléfono</h2>
-          <p class="lead">Ahora falta la otra mitad: tu negocio. Media hora y salimos de ahí con una idea concreta o con un «no hace falta».</p>
+          <h2>Hablemos de tu negocio</h2>
+          <p class="lead">Media hora y salimos de ahí con una idea concreta o con un «no hace falta».</p>
           <div class="btn-row">
             <a class="btn btn--primary" href="contacto.html">Reserva una llamada</a>
             <a class="btn btn--ghost" href="servicios.html">Ver servicios</a>
