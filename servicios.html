@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Servicios — SardIA</title>
+<meta name="description" content="Auditoría de procesos, automatización de flujos, cuadros de mando, CRM y ERP a medida, formación, modelos de predicción y creación de páginas web con SEO y AEO.">
+<link rel="icon" type="image/png" href="assets/favicon-180.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="robots" content="index, follow">
+<meta name="author" content="SardIA">
+<link rel="canonical" href="https://sardia.es/servicios.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SardIA">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://sardia.es/servicios.html">
+<meta property="og:title" content="Servicios — SardIA">
+<meta property="og:description" content="Del diagnóstico inicial a la arquitectura completa, paso a paso y sin saltos.">
+<!-- OG image: para compartir en redes, sustituir por una imagen 1200×630px (assets/og-image.jpg) -->
+<meta property="og:image" content="https://sardia.es/assets/logo_nombre.png">
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Servicios — SardIA">
+<meta name="twitter:description" content="Del diagnóstico inicial a la arquitectura completa, paso a paso y sin saltos.">
+<meta name="twitter:image" content="https://sardia.es/assets/logo_nombre.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style id="sardia-css">
+/* ============================================================
+   SardIA — sistema de diseño
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
+body,h1,h2,h3,h4,p,ul,ol,figure,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+img,video,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font:inherit;color:inherit}
+
+:root{
+  --bg:#061523;
+  --bg-2:#0A2033;
+  --surface:rgba(150,196,226,.055);
+  --surface-2:rgba(150,196,226,.09);
+  --line:rgba(150,196,226,.16);
+  --line-strong:rgba(150,196,226,.32);
+  --text:#E8F1F7;
+  --text-dim:rgba(232,241,247,.66);
+  --text-faint:rgba(232,241,247,.42);
+  --cyan:#2ED3F2;
+  --cyan-deep:#12A8C8;
+  --amber:#F0B44E;
+  --volt:#E4FD12;
+  --r-sm:4px;
+  --r:12px;
+  --r-lg:20px;
+  --pill:999px;
+  --wrap:1180px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --header-h:72px;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Schibsted Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;
+}
+
+/* ---------- tipografía ---------- */
+h1,h2,h3,h4{font-weight:500;line-height:1.08;letter-spacing:-.02em}
+.display{font-size:clamp(2.35rem,5.2vw,3.6rem)}
+.display__alt{display:block;margin-top:.2em;color:var(--cyan);font-size:.7em;letter-spacing:-.015em}
+h2{font-size:clamp(1.95rem,3.8vw,2.75rem);letter-spacing:-.018em}
+h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
+.lead{font-size:clamp(1.0625rem,1.55vw,1.28rem);line-height:1.55;color:var(--text-dim)}
+.muted{color:var(--text-dim)}
+.faint{color:var(--text-faint)}
+.small{font-size:.9375rem;line-height:1.55}
+
+.eyebrow{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:.75rem;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--cyan);
+  display:inline-flex;align-items:center;gap:.6em;
+}
+.eyebrow::before{
+  content:"";width:20px;height:1px;background:currentColor;opacity:.6;
+}
+.eyebrow--plain::before{display:none}
+.eyebrow--volt{color:var(--volt)}
+
+/* ---------- layout ---------- */
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
+.section{padding:clamp(72px,9vw,124px) 0;position:relative}
+.section--tight{padding:clamp(56px,6vw,84px) 0}
+.section-head{max-width:660px;margin-bottom:clamp(40px,5vw,64px)}
+.section-head h2{margin-top:18px}
+.section-head .lead{margin-top:18px}
+.section-head--center{margin-inline:auto;text-align:center}
+.section-head--center .eyebrow::before{display:none}
+
+.grid{display:grid;gap:20px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+
+.divider{height:1px;background:var(--line);border:0;margin:0}
+
+/* fondo con halo suave */
+.glow{position:relative;isolation:isolate}
+.glow::before{
+  content:"";position:absolute;inset:auto 0 auto 50%;transform:translateX(-50%);
+  top:-160px;width:min(900px,110vw);height:520px;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(46,211,242,.11),transparent 65%);
+}
+
+/* ---------- botones ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  height:48px;padding:0 24px;border-radius:var(--pill);border:1px solid transparent;
+  font-size:.9688rem;font-weight:500;letter-spacing:-.005em;white-space:nowrap;cursor:pointer;
+  transition:background .25s var(--ease),border-color .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease),color .25s var(--ease);
+}
+.btn--primary{background:var(--volt);color:#04212C;box-shadow:0 0 0 0 rgba(228,253,18,.4)}
+.btn--primary:hover{background:#F3FF5C;transform:translateY(-1px);box-shadow:0 10px 30px -12px rgba(228,253,18,.7)}
+.btn--ghost{background:var(--surface-2);color:var(--text);border-color:var(--line)}
+.btn--ghost:hover{background:rgba(150,196,226,.16);border-color:var(--line-strong);transform:translateY(-1px)}
+.btn--sm{height:40px;padding:0 18px;font-size:.9063rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+.link-arrow{
+  display:inline-flex;align-items:center;gap:.45em;color:var(--cyan);
+  font-size:.9375rem;font-weight:500;transition:gap .25s var(--ease)
+}
+.link-arrow:hover{gap:.8em}
+.link-arrow svg{width:14px;height:14px}
+
+/* ---------- header ---------- */
+.header{
+  position:sticky;top:0;z-index:50;height:var(--header-h);
+  background:rgba(6,21,35,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+.header__inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;flex-shrink:0}
+.brand img{height:46px;width:auto}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{
+  padding:8px 14px;border-radius:var(--pill);font-size:.9375rem;color:var(--text-dim);
+  transition:color .2s var(--ease),background .2s var(--ease);
+}
+.nav a:hover{color:var(--text);background:var(--surface)}
+.nav a[aria-current="page"]{color:var(--text);background:var(--surface-2)}
+.header__cta{display:flex;align-items:center;gap:10px}
+.burger{
+  display:none;width:42px;height:42px;align-items:center;justify-content:center;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:var(--pill);cursor:pointer;
+}
+.burger svg{width:18px;height:18px}
+.mobile-nav{display:none;border-bottom:1px solid var(--line);background:var(--bg-2)}
+.mobile-nav.is-open{display:block}
+.mobile-nav ul{padding:12px 0 20px}
+.mobile-nav a{display:block;padding:13px 0;font-size:1.0625rem;border-bottom:1px solid var(--line)}
+.mobile-nav .btn{display:flex;margin-top:18px;width:100%;border-bottom:0;padding:0 24px}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:min(88vh,760px);display:flex;align-items:flex-end;
+  overflow:hidden;background:#04121C;
+}
+.hero__video{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;
+}
+.hero__scrim{
+  position:absolute;inset:0;z-index:1;
+  background:
+    linear-gradient(180deg,rgba(4,18,28,.72) 0%,rgba(4,18,28,.42) 34%,rgba(6,21,35,.86) 82%,var(--bg) 100%),
+    linear-gradient(90deg,rgba(4,18,28,.68) 0%,rgba(4,18,28,.12) 62%);
+}
+.hero__inner{position:relative;z-index:2;width:100%;padding-block:clamp(72px,11vw,132px)}
+.hero__content{max-width:760px}
+.hero h1{margin-top:22px}
+.hero .lead{margin-top:26px;max-width:600px;color:rgba(232,241,247,.8)}
+.hero .btn-row{margin-top:36px}
+.hero__meta{
+  margin-top:44px;padding-top:22px;border-top:1px solid rgba(150,196,226,.18);
+  display:flex;flex-wrap:wrap;gap:28px;
+}
+.hero__meta span{font-size:.875rem;color:var(--text-faint)}
+.hero__meta b{display:block;font-weight:500;font-size:1.0625rem;color:var(--text);letter-spacing:-.01em}
+
+/* ---------- cabecera de página interior ---------- */
+.page-hero{
+  padding:clamp(64px,9vw,112px) 0 clamp(48px,6vw,72px);
+  border-bottom:1px solid var(--line);position:relative;isolation:isolate;overflow:hidden;
+}
+.page-hero::before{
+  content:"";position:absolute;z-index:1;top:-260px;left:50%;transform:translateX(-50%);
+  width:min(1000px,120vw);height:620px;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(46,211,242,.13),transparent 66%);
+}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero h1{margin-top:20px;font-size:clamp(2.25rem,4.8vw,3.4rem)}
+.page-hero .lead{margin-top:20px;max-width:62ch}
+
+/* ---------- tarjetas ---------- */
+.card{
+  display:flex;flex-direction:column;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:28px;transition:background .28s var(--ease),border-color .28s var(--ease),transform .28s var(--ease);
+}
+.card--link:hover{background:var(--surface-2);border-color:var(--line-strong);transform:translateY(-3px)}
+.card h3{margin-bottom:10px}
+.card p{color:var(--text-dim);font-size:.9688rem}
+.card__icon{
+  width:42px;height:42px;border-radius:var(--r-sm);margin-bottom:20px;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(46,211,242,.1);border:1px solid rgba(46,211,242,.22);color:var(--cyan);
+}
+.card__icon svg{width:20px;height:20px}
+
+/* tarjeta numerada (proceso) */
+.step{position:relative;padding-top:26px;border-top:1px solid var(--line)}
+.step__n{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.75rem;font-weight:500;
+  letter-spacing:.14em;color:var(--cyan);margin-bottom:16px;display:block;
+}
+.step h3{margin-bottom:10px}
+.step p{color:var(--text-dim);font-size:.9688rem}
+
+/* ---------- valores ---------- */
+.value{display:flex;gap:18px;align-items:flex-start}
+.value__dot{
+  flex-shrink:0;width:30px;height:30px;border-radius:var(--pill);margin-top:2px;
+  display:flex;align-items:center;justify-content:center;
+  background:rgba(46,211,242,.1);border:1px solid rgba(46,211,242,.25);color:var(--cyan);
+}
+.value__dot svg{width:14px;height:14px}
+.value h3{font-size:1.125rem;margin-bottom:8px}
+.value p{color:var(--text-dim);font-size:.9688rem}
+
+/* ---------- rejilla destacada ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.stat{background:var(--bg);padding:32px 26px}
+.stat b{display:block;font-size:clamp(2.1rem,3.6vw,2.9rem);font-weight:500;letter-spacing:-.03em;line-height:1;color:var(--text)}
+.stat span{display:block;margin-top:12px;font-size:.9063rem;color:var(--text-dim)}
+.stats--text .stat b{font-size:1.1875rem;letter-spacing:-.015em;line-height:1.25;color:var(--cyan)}
+.stats--text .stat span{margin-top:10px;font-size:.875rem;line-height:1.5}
+
+/* ---------- listas de características ---------- */
+.feature-list{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 32px;margin-top:32px}
+.feature-list li{
+  display:flex;gap:12px;align-items:flex-start;font-size:.9688rem;color:var(--text-dim);
+  padding-bottom:14px;border-bottom:1px solid var(--line);
+}
+.feature-list svg{width:15px;height:15px;color:var(--volt);flex-shrink:0;margin-top:5px}
+.feature-list b{font-weight:500;color:var(--text)}
+.feature-list--single{grid-template-columns:1fr}
+
+/* ---------- imágenes ---------- */
+.media{
+  border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
+  background:var(--bg-2);position:relative;line-height:0;
+}
+.media img,.media video{width:100%;height:100%;object-fit:cover}
+.media--ratio{aspect-ratio:16/10}
+.media--tall{aspect-ratio:4/3}
+.media::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,rgba(6,21,35,0) 40%,rgba(6,21,35,.62));
+}
+.media--plain::after{display:none}
+.media__caption{
+  position:absolute;left:22px;right:22px;bottom:18px;z-index:2;line-height:1.45;
+  font-size:.8125rem;color:rgba(232,241,247,.82);
+}
+
+/* fondo fotográfico desenfocado */
+.bg-photo{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.bg-photo img{width:100%;height:100%;object-fit:cover;filter:blur(18px) saturate(1.2);transform:scale(1.16)}
+.bg-photo::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,21,35,.84),rgba(6,21,35,.93));
+}
+.bg-photo--soft::after{background:linear-gradient(180deg,rgba(6,21,35,.9),rgba(6,21,35,.96))}
+
+/* ---------- bloques partidos ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);align-items:center}
+.split--wide-media{grid-template-columns:1.1fr .9fr}
+.split h2{margin-top:18px}
+.split p{color:var(--text-dim);margin-top:18px;max-width:56ch}
+.split .btn-row{margin-top:28px}
+
+/* ---------- muro de logotipos ---------- */
+.logo-wall{
+  display:grid;grid-template-columns:repeat(6,1fr);gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+}
+.logo-wall__item{
+  background:var(--bg);padding:26px 14px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:14px;min-height:126px;color:var(--text-dim);
+  transition:background .28s var(--ease),color .28s var(--ease);
+}
+.logo-wall__item:hover{background:var(--surface-2);color:var(--volt)}
+.logo-wall__mark{
+  width:28px;height:28px;background:currentColor;flex-shrink:0;
+  -webkit-mask:var(--i) no-repeat center/contain;mask:var(--i) no-repeat center/contain;
+}
+.logo-wall__item span{font-size:.8125rem;letter-spacing:-.005em;text-align:center;line-height:1.3}
+
+/* ---------- FAQ ---------- */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:24px 48px 24px 0;position:relative;
+  font-size:1.125rem;font-weight:500;letter-spacing:-.012em;
+  transition:color .2s var(--ease);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--cyan)}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:11px;height:11px;
+  border-right:1.5px solid var(--cyan);border-bottom:1.5px solid var(--cyan);
+  transform:translateY(-70%) rotate(45deg);transition:transform .3s var(--ease);
+}
+.faq details[open] summary::after{transform:translateY(-25%) rotate(-135deg)}
+.faq p{padding:0 40px 26px 0;color:var(--text-dim);max-width:70ch}
+
+/* ---------- nota lateral ---------- */
+.note{
+  margin-top:20px;padding:16px 20px;border-left:2px solid var(--cyan);
+  background:var(--surface);border-radius:0 var(--r-sm) var(--r-sm) 0;
+  font-size:.9063rem;color:var(--text-dim);
+}
+.note b{color:var(--text);font-weight:500}
+
+/* ---------- recorrido ---------- */
+.funnel{display:grid;gap:20px}
+.funnel__item{
+  display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:start;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:30px 32px;transition:border-color .28s var(--ease),background .28s var(--ease);
+}
+.funnel__item:hover{border-color:var(--line-strong);background:var(--surface-2)}
+.funnel__n{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.75rem;font-weight:500;
+  letter-spacing:.14em;color:var(--volt);padding-top:6px;white-space:nowrap;
+}
+.funnel__item h3{margin-bottom:10px}
+.funnel__item p{color:var(--text-dim);font-size:.9688rem;max-width:66ch}
+.funnel__badge{font-size:.8125rem;color:var(--text-faint);white-space:nowrap;padding-top:6px}
+
+/* ---------- recorrido: tarjetas que se apilan ---------- */
+.stack{display:block}
+.stack__item{
+  position:sticky;
+  top:calc(var(--header-h) + 22px + var(--i,0) * 16px);
+  padding-bottom:22px;
+}
+.stack__card{
+  position:relative;isolation:isolate;overflow:hidden;
+  border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(28px,3.6vw,46px) clamp(24px,3.6vw,48px);
+  background:
+    radial-gradient(ellipse at 88% -10%,rgba(46,211,242,.13),transparent 60%),
+    radial-gradient(ellipse at 5% 110%,rgba(240,180,78,.06),transparent 55%),
+    var(--bg-2);
+  box-shadow:0 -22px 56px -30px rgba(0,0,0,.95);
+  transition:border-color .28s var(--ease);
+}
+.stack__item:hover .stack__card{border-color:var(--line-strong)}
+.stack__ghost{
+  position:absolute;z-index:-1;pointer-events:none;
+  right:clamp(14px,2.6vw,38px);top:-.16em;
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:clamp(5.5rem,13vw,10.5rem);font-weight:600;line-height:1;
+  letter-spacing:-.06em;color:rgba(150,196,226,.055);
+}
+.stack__head{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;margin-bottom:16px;
+}
+.stack__head .funnel__n,
+.stack__head .funnel__badge{padding-top:0}
+.stack__card h3{font-size:clamp(1.45rem,2.6vw,2rem);margin-bottom:14px}
+.stack__card p{color:var(--text-dim);max-width:62ch;font-size:1.0313rem}
+
+/* ---------- catálogo: cabecera a dos columnas ---------- */
+.svc-intro{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.86fr);
+  gap:clamp(24px,4vw,60px);align-items:end;
+  margin-bottom:clamp(32px,4vw,52px);
+}
+.svc-intro h2{margin-top:18px}
+.svc-intro .lead{padding-bottom:6px}
+
+/* ---------- catálogo: pestañas ---------- */
+.svc-tabs__bar{
+  display:flex;gap:4px;padding:5px;
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--pill);
+  overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;
+  margin-bottom:clamp(22px,3vw,34px);
+}
+.svc-tabs__bar::-webkit-scrollbar{display:none}
+.svc-tabs__btn{
+  flex:1 1 0;min-width:max-content;
+  appearance:none;-webkit-appearance:none;background:transparent;border:0;cursor:pointer;
+  padding:13px 16px;border-radius:var(--pill);
+  font-size:.9375rem;font-weight:500;letter-spacing:-.01em;
+  color:var(--text-dim);white-space:nowrap;
+  transition:color .24s var(--ease),background .24s var(--ease),box-shadow .24s var(--ease);
+}
+.svc-tabs__btn:hover{color:var(--text)}
+.svc-tabs__btn[aria-selected="true"]{
+  background:var(--surface-2);color:var(--text);
+  box-shadow:inset 0 0 0 1px var(--line-strong);
+}
+.svc-tabs__btn:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+
+#catalogo{scroll-margin-top:calc(var(--header-h) + 14px)}
+.svc-tab[hidden]{display:none}
+.svc-tab__media{
+  position:relative;margin:0;aspect-ratio:16/9;
+  border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
+  background:var(--bg-2);line-height:0;
+  box-shadow:0 40px 90px -50px rgba(0,0,0,.95);
+}
+.svc-tab__media img,
+.svc-tab__media video{width:100%;height:100%;object-fit:cover}
+.svc-tab__media::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,transparent 55%,rgba(6,21,35,.4) 100%);
+}
+/* el vídeo del ERP es vertical: se centra sobre el marco en vez de recortarse */
+.svc-tab__media--portrait{
+  display:flex;align-items:center;justify-content:center;padding:26px;
+  background:
+    radial-gradient(ellipse at 50% 25%,rgba(46,211,242,.16),transparent 62%),
+    var(--bg-2);
+}
+/* imagen de datos como fondo difuminado detrás del vídeo vertical */
+.svc-tab__media-bg{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  transform:scale(1.15);filter:blur(22px) saturate(1.05);
+  opacity:.32;z-index:0;
+}
+.svc-tab__media--portrait::after{z-index:1}
+.svc-tab__media--portrait video{
+  position:relative;z-index:2;
+  width:auto;height:100%;max-width:none;object-fit:contain;
+  border-radius:14px;border:1px solid var(--line);
+  box-shadow:0 30px 70px -28px rgba(0,0,0,.95);
+}
+
+.svc-tab__grid{
+  display:grid;grid-template-columns:minmax(0,.76fr) minmax(0,1.24fr);
+  gap:clamp(28px,4vw,60px);
+  margin-top:clamp(28px,3.4vw,44px);
+}
+.svc-tab__intro{position:sticky;top:calc(var(--header-h) + 28px);align-self:start}
+.svc-tab__intro h3{margin-top:16px;font-size:clamp(1.4rem,2.4vw,1.85rem)}
+.svc-tab__intro p{margin-top:14px;font-size:.9688rem;max-width:38ch}
+.svc-tab__rows .svc-row:first-child{padding-top:0}
+.svc-tab__rows .feature-list{margin-top:22px}
+
+/* ---------- catálogo de servicios ---------- */
+.svc-block{margin-top:56px}
+.svc-block:first-of-type{margin-top:0}
+.svc-block h3{
+  display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-bottom:16px;
+  border-bottom:1px solid var(--line-strong);margin-bottom:4px;
+}
+.svc-block h3 em{
+  font-style:normal;font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:.6875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);
+}
+.svc-row{padding:22px 0;border-bottom:1px solid var(--line)}
+.svc-row b{font-weight:500;font-size:1.0625rem;letter-spacing:-.012em;display:block;margin-bottom:6px}
+.svc-row p{color:var(--text-dim);font-size:.9375rem;max-width:72ch}
+/* datos: texto a un lado, imagen completa al otro */
+.svc-split{display:grid;grid-template-columns:1fr minmax(0,.92fr);gap:clamp(32px,4.5vw,60px);align-items:center;margin-top:6px}
+.svc-split__text .svc-row:first-child{padding-top:0}
+.svc-split__media{margin:0;align-self:center}
+.svc-split__media img{
+  width:100%;height:auto;display:block;border-radius:14px;
+  border:1px solid var(--line);background:#0a1420;
+}
+.svc-split__media figcaption{
+  color:var(--text-dim);font-size:.8125rem;line-height:1.5;margin-top:14px;max-width:44ch;
+}
+
+/* ---------- showcase con vídeo vertical ---------- */
+.showcase{display:grid;grid-template-columns:minmax(0,.62fr) minmax(0,1.38fr);gap:clamp(32px,5vw,64px);align-items:center}
+.showcase__video{
+  border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--line);
+  background:#0A2033;line-height:0;box-shadow:0 30px 70px -40px rgba(0,0,0,.9);
+}
+.showcase__video video{width:100%}
+
+/* ---------- perfil ---------- */
+.profile{display:grid;grid-template-columns:.65fr 1.35fr;gap:clamp(32px,5vw,60px);align-items:start}
+.profile__photo{
+  aspect-ratio:4/5;border:1px dashed var(--line-strong);border-radius:var(--r-lg);
+  background:var(--surface);display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:28px;color:var(--text-faint);font-size:.875rem;line-height:1.5;
+}
+.profile h3{margin-bottom:6px}
+.profile__role{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.75rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--cyan);margin-bottom:22px;display:block;
+}
+.profile p{color:var(--text-dim);margin-bottom:16px;max-width:66ch}
+.profile p:last-child{margin-bottom:0}
+
+/* ---------- CTA final ---------- */
+.cta{
+  border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(40px,6vw,72px);
+  background:
+    radial-gradient(ellipse at 20% 0%,rgba(46,211,242,.14),transparent 58%),
+    radial-gradient(ellipse at 90% 100%,rgba(240,180,78,.09),transparent 55%),
+    var(--bg-2);
+  text-align:center;position:relative;overflow:hidden;isolation:isolate;
+}
+.cta__body{position:relative;z-index:2}
+.cta__mark{width:112px;margin:0 auto 26px;opacity:1}
+.cta__mark--mascot{width:clamp(184px,25vw,288px);margin-bottom:14px;filter:drop-shadow(0 24px 50px rgba(46,211,242,.22))}
+.cta h2{max-width:20ch;margin-inline:auto}
+.cta .lead{max-width:52ch;margin:20px auto 0}
+.cta .btn-row{justify-content:center;margin-top:34px}
+
+/* ---------- formulario ---------- */
+.form{display:grid;gap:18px}
+.field{display:grid;gap:8px}
+.field label{font-size:.875rem;color:var(--text-dim);font-weight:500}
+.field input,.field textarea,.field select{
+  width:100%;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);
+  padding:13px 14px;font-size:1rem;color:var(--text);
+  transition:border-color .2s var(--ease),background .2s var(--ease);
+}
+.field textarea{min-height:130px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:var(--text-faint)}
+.field input:focus,.field textarea:focus,.field select:focus{
+  outline:none;border-color:var(--cyan);background:var(--surface-2);
+}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:.875rem;color:var(--text-dim)}
+.consent input{width:17px;height:17px;margin-top:3px;accent-color:var(--cyan);flex-shrink:0}
+
+.form-panel{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:clamp(28px,4vw,44px);
+}
+.form-panel h2{font-size:clamp(1.5rem,2.4vw,1.9rem);margin-bottom:10px}
+.form-panel>p{color:var(--text-dim);font-size:.9375rem;margin-bottom:30px;max-width:52ch}
+.form .btn{margin-top:6px;width:100%}
+.form-note{margin-top:16px;font-size:.8125rem;color:var(--text-faint);line-height:1.5}
+
+.contact-layout{display:grid;grid-template-columns:1.25fr .85fr;gap:clamp(40px,5vw,72px);align-items:start}
+.side h3{font-size:1.0625rem;margin-bottom:10px}
+.side p{color:var(--text-dim);font-size:.9375rem}
+.side-block{padding:24px 0;border-bottom:1px solid var(--line)}
+.side-block:first-child{padding-top:0}
+.side-block:last-child{border-bottom:0}
+.side-block a{color:var(--cyan)}
+.side-block a:hover{text-decoration:underline}
+
+/* ---------- footer ---------- */
+.footer{border-top:1px solid var(--line);padding:clamp(56px,7vw,80px) 0 36px;background:var(--bg)}
+.footer__top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px}
+.footer__brand img{height:36px;margin-bottom:20px}
+.footer__brand p{color:var(--text-dim);font-size:.9375rem;max-width:38ch}
+.footer h4{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.6875rem;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);margin-bottom:18px;
+}
+.footer li{margin-bottom:11px}
+.footer li a{font-size:.9375rem;color:var(--text-dim);transition:color .2s var(--ease)}
+.footer li a:hover{color:var(--cyan)}
+.footer__bottom{
+  margin-top:56px;padding-top:24px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;
+  font-size:.8125rem;color:var(--text-faint);
+}
+
+/* ---------- banda manifiesto (foto desenfocada + frase) ---------- */
+.manifesto{
+  position:relative;overflow:hidden;
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  padding:clamp(76px,10vw,140px) 0;
+}
+.manifesto .bg-photo img{filter:blur(30px) saturate(1.3);transform:scale(1.25)}
+.manifesto .bg-photo::after{
+  background:radial-gradient(ellipse at 62% 40%,rgba(6,21,35,.62),rgba(6,21,35,.94) 70%);
+}
+.manifesto .wrap{position:relative;z-index:2}
+.manifesto h2{font-size:clamp(1.9rem,4.4vw,3.1rem);max-width:16ch}
+.manifesto p{margin-top:24px;color:var(--text-dim);max-width:50ch;font-size:1.0625rem}
+.manifesto .btn-row{margin-top:30px}
+
+/* ---------- contraste antes / después ---------- */
+.contrast{
+  display:grid;grid-template-columns:1fr 1fr;gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;
+}
+.contrast__col{background:var(--bg);padding:clamp(26px,3.4vw,42px)}
+.contrast__col--after{background:var(--bg-2)}
+.contrast__tag{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.6875rem;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);
+}
+.contrast__col--after .contrast__tag{color:var(--volt)}
+.contrast ul{margin-top:24px;display:grid;gap:15px}
+.contrast li{
+  display:flex;gap:13px;align-items:flex-start;
+  font-size:.9688rem;line-height:1.5;color:var(--text-faint);
+}
+.contrast li::before{
+  content:"";width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:9px;
+  background:var(--text-faint);opacity:.7;
+}
+.contrast__col--after li{color:var(--text-dim)}
+.contrast__col--after li b{color:var(--text);font-weight:500}
+.contrast__col--after li::before{background:var(--volt);box-shadow:0 0 0 3px rgba(228,253,18,.18);opacity:1}
+
+/* ---------- foto ancha dentro de un bloque de servicio ---------- */
+.svc-photo{
+  position:relative;margin-top:30px;border-radius:var(--r-lg);overflow:hidden;
+  border:1px solid var(--line);background:var(--bg-2);
+  display:grid;grid-template-columns:1fr;isolation:isolate;
+}
+.svc-photo img{
+  grid-area:1/1;width:100%;height:100%;object-fit:cover;
+  aspect-ratio:21/9;opacity:.42;filter:saturate(.85);
+}
+.svc-photo__text{
+  grid-area:1/1;z-index:2;align-self:end;
+  padding:clamp(26px,3.6vw,44px);
+  background:linear-gradient(180deg,rgba(6,21,35,.15) 0%,rgba(6,21,35,.82) 55%,rgba(6,21,35,.95) 100%);
+}
+.svc-photo__text b{
+  display:block;font-size:clamp(1.0625rem,1.8vw,1.35rem);font-weight:500;
+  letter-spacing:-.015em;line-height:1.3;max-width:26ch;
+}
+.svc-photo__text span{display:block;margin-top:10px;font-size:.9063rem;color:var(--text-dim);max-width:58ch}
+
+/* ---------- desplegable ---------- */
+.field select{
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  padding-right:42px;cursor:pointer;
+  background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2396C4E2' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;background-size:17px;
+}
+/* el desplegable nativo se pinta sobre fondo claro: forzamos texto oscuro para que se lea */
+.field select option{background-color:#FFFFFF;color:#0A2033}
+.field select option:disabled{color:#7A8894}
+
+/* ---------- responsive ---------- */
+@media (max-width:1040px){
+  .svc-tab__grid{grid-template-columns:1fr;gap:26px}
+  .svc-tab__intro{position:static}
+  .svc-tab__intro p{max-width:62ch}
+  .svc-intro{grid-template-columns:1fr;align-items:start;gap:18px}
+}
+@media (max-width:760px){
+  .svc-tabs__bar{border-radius:var(--r)}
+  .svc-tabs__btn{flex:0 0 auto;padding:11px 15px;font-size:.875rem}
+  .svc-tab__media{aspect-ratio:4/3}
+  .svc-tab__media--portrait{padding:18px}
+  .stack__item{position:static;padding-bottom:16px}
+  .stack__card{box-shadow:none}
+}
+@media (max-width:960px){
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .logo-wall{grid-template-columns:repeat(4,1fr)}
+  .footer__top{grid-template-columns:1fr 1fr;gap:40px}
+  .footer__brand{grid-column:1/-1}
+}
+@media (max-width:880px){
+  .contrast{grid-template-columns:1fr}
+  .split,.split--wide-media,.showcase,.profile,.contact-layout{grid-template-columns:1fr}
+  .svc-split{grid-template-columns:1fr;gap:28px}
+  .svc-split__media{max-width:460px;margin-inline:auto}
+  .showcase__video{max-width:340px;margin-inline:auto}
+  .profile__photo{max-width:280px;aspect-ratio:1/1}
+}
+@media (max-width:860px){
+  .nav,.header__cta .btn{display:none}
+  .burger{display:flex}
+}
+@media (max-width:680px){
+  body{font-size:16px}
+  .svc-photo img{aspect-ratio:4/3}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .logo-wall{grid-template-columns:repeat(2,1fr)}
+  .feature-list{grid-template-columns:1fr}
+  .field-row{grid-template-columns:1fr}
+  .footer__top{grid-template-columns:1fr}
+  .funnel__item{grid-template-columns:1fr;gap:12px;padding:26px 22px}
+  .funnel__badge{padding-top:0}
+  .hero{min-height:auto}
+  .hero__meta{gap:20px}
+  .hero__meta>div{min-width:44%}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition-duration:.01ms!important}
+}
+</style>
+<link rel="stylesheet" href="assets/scroll-fx.css">
+<script>if(!window.matchMedia||!matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('sfx-ready')}</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://sardia.es/servicios.html#webpage",
+      "url": "https://sardia.es/servicios.html",
+      "name": "Servicios — SardIA",
+      "description": "Auditoría de procesos, automatización de flujos, cuadros de mando, CRM y ERP a medida, formación, modelos de predicción y creación de páginas web con SEO y AEO.",
+      "inLanguage": "es-ES",
+      "isPartOf": { "@type": "WebSite", "url": "https://sardia.es/", "name": "SardIA" },
+      "dateModified": "2026-08-26"
+    },
+    {
+      "@type": "Service",
+      "name": "Consultoría de datos e inteligencia artificial",
+      "serviceType": "Consultoría de datos, automatización e IA",
+      "provider": {
+        "@type": "Organization",
+        "@id": "https://sardia.es/#organization",
+        "name": "SardIA",
+        "url": "https://sardia.es/"
+      },
+      "areaServed": { "@type": "Country", "name": "España" },
+      "url": "https://sardia.es/servicios.html",
+      "description": "Auditoría de procesos, automatización de flujos, cuadros de mando, CRM y ERP a medida, formación, modelos de predicción y creación de páginas web con SEO y AEO.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de SardIA",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Auditoría de procesos", "description": "Miramos cómo se trabaja realmente en cada área y salimos con los circuitos sobre papel y un plan priorizado." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automatización de flujos y RPA", "description": "Automatización de circuitos concretos (factura a contabilidad, pedido a hoja de cálculo, lead a CRM) y agentes o bots conversacionales por WhatsApp o correo." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Datos y cuadros de mando", "description": "Limpieza y estructuración de datos, cuadros de mando a medida que se refrescan solos e informes automáticos." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "CRM y ERP a medida", "description": "CRM y ERP conectados para pymes: facturación y cobros, control de stock, entrada multicanal y seguimiento comercial." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Formación en IA", "description": "Talleres prácticos de IA sobre los documentos reales del equipo, y formación a particulares y centros educativos." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Predicción de negocio (machine learning)", "description": "Modelos de previsión de ventas, demanda o facturación a partir del histórico propio, con el error traducido a euros." } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Creación de páginas web con SEO y AEO", "description": "Webs animadas a medida, codificadas a mano, preparadas para el SEO clásico y para el AEO de los buscadores de IA." } }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://sardia.es/" },
+        { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://sardia.es/servicios.html" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html" aria-label="SardIA — inicio">
+      <img src="assets/logo6_hor.png" alt="SardIA">
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" aria-current="page">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header__cta">
+      <a class="btn btn--primary btn--sm" href="contacto.html">Reserva una llamada</a>
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" data-menu-panel>
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a class="btn btn--primary" href="contacto.html">Reserva una llamada</a>
+  </div>
+</div>
+
+<main>
+
+  <section class="page-hero">
+    <div class="bg-photo"><img src="assets/pipeline-datos.jpg" alt=""></div>
+    <div class="wrap">
+      <span class="eyebrow eyebrow--volt">Servicios</span>
+      <h1>Del diagnóstico<br>a la arquitectura</h1>
+      <p class="lead">Cuatro escalones y un catálogo. Nadie sube al siguiente escalón hasta que el anterior ha dado un resultado que se puede ver.</p>
+      <div class="btn-row" style="margin-top:32px">
+        <a class="btn btn--primary" href="contacto.html">Solicitar auditoría</a>
+        <a class="btn btn--ghost" href="#catalogo">Ver el catálogo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EL RECORRIDO ==================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">El recorrido</span>
+        <h2>Cuatro escalones, y solo subes si el anterior ha funcionado</h2>
+      </div>
+
+      <div class="stack">
+        <article class="stack__item" id="auditoria" style="--i:0">
+          <div class="stack__card">
+            <span class="stack__ghost" aria-hidden="true">01</span>
+            <div class="stack__head">
+              <span class="funnel__n">PASO 01</span>
+              <span class="funnel__badge">Punto de partida</span>
+            </div>
+            <h3>Auditoría</h3>
+            <p>Miramos cómo se trabaja realmente en cada área. Salimos con los circuitos sobre papel y un plan priorizado. Aunque pares aquí, te llevas un mapa de tu negocio que antes no existía.</p>
+          </div>
+        </article>
+        <article class="stack__item" id="express" style="--i:1">
+          <div class="stack__card">
+            <span class="stack__ghost" aria-hidden="true">02</span>
+            <div class="stack__head">
+              <span class="funnel__n">PASO 02</span>
+              <span class="funnel__badge">Primer resultado visible</span>
+            </div>
+            <h3>Implementación Express</h3>
+            <p>Se elige un proceso de los que salieron en la auditoría, se monta y se deja funcionando. Es la forma barata de comprobar si te encaja trabajar con nosotros.</p>
+          </div>
+        </article>
+        <article class="stack__item" id="arquitectura" style="--i:2">
+          <div class="stack__card">
+            <span class="stack__ghost" aria-hidden="true">03</span>
+            <div class="stack__head">
+              <span class="funnel__n">PASO 03</span>
+              <span class="funnel__badge">Desarrollo a medida</span>
+            </div>
+            <h3>Arquitectura y MVP</h3>
+            <p>Dónde vive el dato, cómo se conectan los sistemas y qué sigue siendo decisión de una persona. Se entrega por versiones y cada una se prueba con tu equipo.</p>
+          </div>
+        </article>
+        <article class="stack__item" id="acompanamiento" style="--i:3">
+          <div class="stack__card">
+            <span class="stack__ghost" aria-hidden="true">04</span>
+            <div class="stack__head">
+              <span class="funnel__n">PASO 04</span>
+              <span class="funnel__badge">Contacto continuo</span>
+            </div>
+            <h3>Acompañamiento</h3>
+            <p>Un proyecto no termina cuando se entrega. Reuniones periódicas. Si algo no se usa como esperábamos, se cambia.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="stats stats--text" style="margin-top:40px">
+        <div class="stat"><b>Todas las áreas</b><span>Marketing, ventas, operaciones y administración.</span></div>
+        <div class="stat"><b>Con quien hace el trabajo</b><span>Hablamos con quienes realizan el trabajo diario.</span></div>
+        <div class="stat"><b>Flujos documentados</b><span>Cómo se trabaja hoy, paso a paso, antes de proponer cambiar nada.</span></div>
+        <div class="stat"><b>Plan priorizado</b><span>Qué aporta más con menos esfuerzo, qué espera y qué no compensa tocar.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ==================== CATÁLOGO ==================== -->
+  <section class="section" id="catalogo">
+    <div class="wrap">
+      <div class="svc-intro">
+        <div class="svc-intro__title">
+          <span class="eyebrow">Catálogo</span>
+          <h2>Qué podemos hacer por ti</h2>
+        </div>
+        <p class="lead">Cada servicio se puede contratar por separado, aunque el mejor resultado llega cuando encajan como un único proceso end-to-end. El alcance y el precio se cierran por escrito antes de tocar nada.</p>
+      </div>
+
+      <div class="svc-tabs">
+        <div class="svc-tabs__bar" role="tablist" aria-label="Catálogo de servicios">
+          <button class="svc-tabs__btn" type="button" role="tab" id="tab-datos" aria-controls="datos" aria-selected="true" tabindex="0">Datos y BI</button>
+          <button class="svc-tabs__btn" type="button" role="tab" id="tab-automatizacion" aria-controls="automatizacion" aria-selected="false" tabindex="-1">Automatización e IA</button>
+          <button class="svc-tabs__btn" type="button" role="tab" id="tab-crm" aria-controls="crm" aria-selected="false" tabindex="-1">CRM y ERP</button>
+          <button class="svc-tabs__btn" type="button" role="tab" id="tab-formacion" aria-controls="formacion" aria-selected="false" tabindex="-1">Formación</button>
+          <button class="svc-tabs__btn" type="button" role="tab" id="tab-ml" aria-controls="ml" aria-selected="false" tabindex="-1">Predicción</button>
+          <button class="svc-tabs__btn" type="button" role="tab" id="tab-web" aria-controls="web" aria-selected="false" tabindex="-1">Webs</button>
+        </div>
+
+        <div class="svc-tab is-active" id="datos" role="tabpanel" aria-labelledby="tab-datos">
+          <figure class="svc-tab__media">
+            <img src="assets/dashboard-monitor.jpg" alt="Cuadro de mando con los indicadores del negocio actualizándose solo desde las fuentes de datos" loading="lazy">
+          </figure>
+          <div class="svc-tab__grid">
+            <div class="svc-tab__intro">
+              <span class="eyebrow">La base de todo</span>
+              <h3>Datos y cuadros de mando</h3>
+              <p class="muted">Sin un dato fiable debajo, cualquier automatización solo sirve para equivocarse más rápido. Por eso empezamos aquí.</p>
+            </div>
+            <div class="svc-tab__rows">
+            <div class="svc-row">
+              <b>Limpieza y estructuración de datos</b>
+              <p>Dejar la información en un estado sobre el que se pueda construir: sin duplicados, con criterios coherentes y con una única versión de cada cifra.</p>
+            </div>
+            <div class="svc-row">
+              <b>Cuadros de mando a medida</b>
+              <p>Los indicadores que de verdad miras, en una pantalla que se refresca sola desde tus fuentes. Se acabó pedirle a alguien el Excel del mes.</p>
+            </div>
+            <div class="svc-row" style="border-bottom:0">
+              <b>Informes automáticos</b>
+              <p>El mismo resumen, con la periodicidad que te sirva, llegando solo por correo o por WhatsApp.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-tab" id="automatizacion" role="tabpanel" aria-labelledby="tab-automatizacion" hidden>
+          <figure class="svc-tab__media">
+            <img src="assets/agentes-panel.jpg" alt="Panel de agentes IA atendiendo conversaciones de clientes en tiempo real" loading="lazy">
+          </figure>
+          <div class="svc-tab__grid">
+            <div class="svc-tab__intro">
+              <span class="eyebrow">Lo que hoy se hace a mano</span>
+              <h3>Automatización y agentes</h3>
+              <p class="muted">Si cada semana se repite el mismo circuito, se define una vez y deja de ocupar a nadie.</p>
+            </div>
+            <div class="svc-tab__rows">
+            <div class="svc-row">
+              <b>Automatización de un flujo concreto</b>
+              <p>Si cada semana haces lo mismo —pasar datos de un sitio a otro, enviar el mismo aviso, generar el mismo documento— eso se puede hacer solo. Defines el circuito una vez: qué lo arranca, qué pasos sigue y dónde termina. A partir de ahí no vuelves a tocarlo.</p>
+            </div>
+            <div class="svc-row">
+              <b>Agentes IA</b>
+              <p>Ofrecemos diferentes tipos de agentes a medida según lo que necesite tu negocio: de correos, de seguimiento de clientes, de informes automáticos... entre otros.</p>
+            </div>
+            <div class="svc-row" style="border-bottom:0">
+              <b>Bots conversacionales</b>
+              <p>Un asistente que responde las preguntas más habituales de tus clientes por WhatsApp o correo, a cualquier hora del día. Sabe lo que tú le enseñas sobre tu negocio, y cuando aparece algo que no puede resolver, avisa a una persona para que tome el relevo.</p>
+            </div>
+              <p class="note"><b>Sobre el coste de la IA.</b> Cuando un flujo usa un modelo de lenguaje, la API va aparte y se factura a coste, sin margen. Ves el gasto real desde el primer día.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-tab" id="crm" role="tabpanel" aria-labelledby="tab-crm" hidden>
+          <figure class="svc-tab__media svc-tab__media--portrait">
+            <img class="svc-tab__media-bg" src="assets/bi-isometrico.jpg" alt="" aria-hidden="true" loading="lazy">
+            <video autoplay muted loop playsinline preload="metadata" aria-label="Demostración del CRM y ERP a medida funcionando">
+              <source src="assets/dashboard-demo.mp4" type="video/mp4">
+            </video>
+          </figure>
+          <div class="svc-tab__grid">
+            <div class="svc-tab__intro">
+              <span class="eyebrow">El cliente escribe, el sistema responde</span>
+              <h3>CRM y ERP automatizados</h3>
+              <p class="muted">Tu operativa y tus ventas conectadas en un solo lugar. El punto de encuentro entre captar clientes y gestionar tu negocio.</p>
+            </div>
+            <div class="svc-tab__rows">
+              <div class="svc-row">
+                <b>ERP y CRM a medida</b>
+                <p>Diseñado para empresas que necesitan más potencia y orden que una hoja de Excel, pero sin la complejidad ni los costes desorbitados de un software tradicional.</p>
+              </div>
+              <ul class="feature-list feature-list--single">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Facturación y cobros conectados: </b>Generación automática de presupuestos, facturas recurrentes y sincronización directa con tu pasarela de pago o gestoría.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Control de stock y alertas de rotura: </b>Si vendes producto o material, el inventario se descuenta automáticamente con cada venta y te avisa cuando un artículo baja del mínimo fijado.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Entrada multicanal: </b>correo, WhatsApp, redes y formulario web al mismo sitio.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Calificación y seguimiento comercial: </b>para atender antes a quien está más cerca de comprar.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Generación y firma de propuestas en 1 click: </b>Crea presupuestos a partir de plantillas con los datos del cliente ya volcados.</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Reactivación automática de clientes inactivos: </b>El sistema detecta cuentas sin compras o interacción en más de 60 días y dispara un mensaje personalizado.</span></li>
+              </ul>
+              <p class="note"><b>¿Por dónde arrancar?</b> Tú marcas la prioridad según lo que te quite el sueño hoy.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-tab" id="formacion" role="tabpanel" aria-labelledby="tab-formacion" hidden>
+          <figure class="svc-tab__media">
+            <img src="assets/formacion-taller.jpg" alt="Dos personas construyendo juntas una automatización delante de la pantalla" loading="lazy">
+          </figure>
+          <div class="svc-tab__grid">
+            <div class="svc-tab__intro">
+              <span class="eyebrow">Que no dependa de nosotros</span>
+              <h3>Formación</h3>
+              <p class="muted">Se aprende con vuestros propios documentos delante. Nada de diapositivas ni de ejemplos de manual.</p>
+            </div>
+            <div class="svc-tab__rows">
+            <div class="svc-row">
+              <b>Talleres de IA para perfiles administrativos</b>
+              <p>Redacción, organización del trabajo y gestión documental con asistentes de IA. Se trabaja sobre los documentos reales del equipo, no sobre ejemplos de manual.</p>
+            </div>
+            <div class="svc-row" style="border-bottom:0">
+              <b>Formación a particulares y centros educativos</b>
+              <p>Para quien quiere mejorar sus competencias por su cuenta, y para escuelas que quieren llevar estas herramientas al aula.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-tab" id="ml" role="tabpanel" aria-labelledby="tab-ml" hidden>
+          <figure class="svc-tab__media">
+            <img src="assets/prediccion-forecast.jpg" alt="Cuadro de previsión de crecimiento con la tendencia estimada y el intervalo de confianza" loading="lazy">
+          </figure>
+          <div class="svc-tab__grid">
+            <div class="svc-tab__intro">
+              <span class="eyebrow eyebrow--volt">Machine learning</span>
+              <h3>Predicción de negocio</h3>
+              <p class="muted">Lo que va a pasar, estimado sobre tu propio histórico y con el margen de error traducido a euros.</p>
+            </div>
+            <div class="svc-tab__rows">
+            <div class="svc-row" style="border-bottom:0">
+              <b>Modelos de previsión a medida</b>
+              <p>Previsión de ventas, de demanda o de facturación construida sobre tu propio histórico. Las métricas de validación te las traducimos a términos de negocio: cuánto se equivoca el modelo y qué significa eso en tu cuenta de resultados.</p>
+            </div>
+              <p class="note">Necesita un histórico de datos razonablemente limpio y con suficiente recorrido. Si no lo hay, lo honesto es empezar por ordenar los datos y volver a hablar más adelante.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="svc-tab" id="web" role="tabpanel" aria-labelledby="tab-web" hidden>
+          <figure class="svc-tab__media">
+            <img src="assets/web-showcase.jpg" alt="Portátil mostrando una web animada hecha a medida" loading="lazy">
+          </figure>
+          <div class="svc-tab__grid">
+            <div class="svc-tab__intro">
+              <span class="eyebrow">Que te encuentren, humanos y máquinas</span>
+              <h3>Creación de páginas web</h3>
+              <p class="muted">Webs animadas, no plantillas con tu logotipo encima. Se codifica a mano, así que pesa poco y carga rápido.</p>
+            </div>
+            <div class="svc-tab__rows">
+            <div class="svc-row">
+              <b>Diseño y producción a medida</b>
+              <p>Primero se fija la marca: cómo suena, qué transmite, a quién le habla. Después se generan las imágenes y las animaciones, y solo entonces se monta. Es más lento que abrir una plantilla, y se nota en el resultado.</p>
+            </div>
+            <div class="svc-row">
+              <b>SEO y AEO</b>
+              <p>El SEO clásico para Google, y el AEO para lo que viene detrás: cada vez más gente le pregunta a una IA en lugar de buscar, y quien entra en las webs son sus rastreadores. Preparamos la tuya para que te recomienden a ti cuando alguien pregunte por tu sector.</p>
+            </div>
+            <div class="svc-row" style="border-bottom:0">
+              <b>Formularios conectados</b>
+              <p>El formulario no acaba en una bandeja de entrada: entra directo en el flujo, crea la ficha y dispara la respuesta. La web deja de ser un folleto y pasa a ser la puerta del sistema.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CTA ==================== -->
+  <section class="section">
+    <div class="wrap">
+      <div class="cta">
+        <div class="cta__body">
+          <img class="cta__mark cta__mark--mascot" src="assets/mascota.png" alt="Mascota de SardIA, una manta raya">
+          <h2>¿Por dónde empezar en tu caso?</h2>
+          <p class="lead">Puedes contratar un servicio suelto, pero lo que de verdad transforma un negocio es aplicarlos como un proceso completo. En la auditoría vemos por dónde conviene arrancar y cómo se conectan los siguientes pasos.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="contacto.html">Solicitar auditoría</a>
+            <a class="btn btn--ghost" href="nosotros.html">Conocer a SardIA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo6_hor.png" alt="SardIA">
+        <p>Consultoría de datos e inteligencia artificial. Domina las nuevas corrientes: Impulsa tu negocio hacia la modernidad</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html#auditoria">Auditoría de procesos</a></li>
+          <li><a href="servicios.html#automatizacion">Automatización de flujos</a></li>
+          <li><a href="servicios.html#datos">Datos y cuadros de mando</a></li>
+          <li><a href="servicios.html#crm">CRM y ERP automatizados</a></li>
+          <li><a href="servicios.html#formacion">Formación</a></li>
+          <li><a href="servicios.html#ml">Predicción de negocio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sard<span style="color:var(--volt)">IA</span></h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html#web">Creación de páginas web</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 SardIA. Todos los derechos reservados.</span>
+      <span>Datos, automatización e inteligencia artificial</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('[data-menu-toggle]');
+  var panel = document.querySelector('[data-menu-panel]');
+  if(!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = panel.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  });
+})();
+</script>
+
+<script>
+/* Catálogo de servicios: pestañas accesibles + soporte de anclas (#datos, #crm...) */
+(function(){
+  var bar = document.querySelector('.svc-tabs__bar');
+  if(!bar) return;
+  var btns   = Array.prototype.slice.call(bar.querySelectorAll('.svc-tabs__btn'));
+  var panels = btns.map(function(b){ return document.getElementById(b.getAttribute('aria-controls')); });
+
+  function select(id, focus){
+    var i = btns.findIndex ? btns.findIndex(function(b){ return b.getAttribute('aria-controls') === id; })
+                           : -1;
+    if(i < 0) return false;
+    btns.forEach(function(b, k){
+      var on = (k === i);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+      b.setAttribute('tabindex', on ? '0' : '-1');
+      var pane = panels[k];
+      if(!pane) return;
+      pane.hidden = !on;
+      pane.classList.toggle('is-active', on);
+      /* si el reveal por scroll dejó algo oculto, se fuerza al mostrar la pestaña */
+      if(on){
+        pane.querySelectorAll('.svc-row,.feature-list,.stats,.media').forEach(function(el){
+          el.classList.add('is-visible');
+        });
+      }
+    });
+    if(focus) btns[i].focus();
+    return true;
+  }
+
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){ select(b.getAttribute('aria-controls')); });
+  });
+
+  bar.addEventListener('keydown', function(e){
+    var i = btns.indexOf(document.activeElement);
+    if(i < 0) return;
+    var next = null;
+    if(e.key === 'ArrowRight') next = (i + 1) % btns.length;
+    else if(e.key === 'ArrowLeft') next = (i - 1 + btns.length) % btns.length;
+    else if(e.key === 'Home') next = 0;
+    else if(e.key === 'End') next = btns.length - 1;
+    if(next === null) return;
+    e.preventDefault();
+    select(btns[next].getAttribute('aria-controls'), true);
+  });
+
+  function goToCatalog(smooth){
+    var cat = document.getElementById('catalogo');
+    if(cat) cat.scrollIntoView({behavior: smooth ? 'smooth' : 'auto', block:'start'});
+  }
+
+  function fromHash(smooth){
+    var id = (location.hash || '').replace('#','');
+    if(!id) return;
+    if(select(id)) goToCatalog(smooth);
+  }
+
+  /* al entrar con ancla (servicios.html#crm) el salto se hace tras la carga:
+     el panel esta oculto al parsear, asi que el navegador no puede saltar solo. */
+  fromHash(false);
+  if(document.readyState !== 'complete'){
+    window.addEventListener('load', function(){ setTimeout(function(){ fromHash(false); }, 0); });
+  }
+  window.addEventListener('hashchange', function(){ fromHash(true); });
+
+  /* enlaces internos del pie / de la navegación hacia una pestaña */
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href*="#"]');
+    if(!a) return;
+    var href = a.getAttribute('href') || '';
+    var hash = href.indexOf('#') >= 0 ? href.slice(href.indexOf('#') + 1) : '';
+    if(!hash) return;
+    var samePage = href.charAt(0) === '#' || href.indexOf('servicios.html#') === 0;
+    if(!samePage) return;
+    if(btns.some(function(b){ return b.getAttribute('aria-controls') === hash; })){
+      e.preventDefault();
+      history.replaceState(null, '', '#' + hash);
+      select(hash);
+      goToCatalog(true);
+    }
+  });
+})();
+</script>
+
+<script src="assets/scroll-fx.js" defer></script>
+<script src="assets/i18n.js" defer></script>
+</body>
+</html>

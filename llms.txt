@@ -1,0 +1,30 @@
+# SardIA
+
+> Consultoría de datos e inteligencia artificial para empresas de cualquier tamaño. Ordenamos tus datos, conectamos las herramientas que ya usas y automatizamos lo que hoy se hace a mano. Domina las nuevas corrientes.
+
+SardIA es una consultoría fundada por Gerard Sardà Calull (Analista de Datos e IA), con base en el Camp de Tarragona (Cataluña, España). Trabaja en Tarragona, las Terres de l'Ebre y el resto de Cataluña, y también en remoto. Contacto: hola@sardia.es
+
+## Servicios
+
+- [Auditoría de procesos](https://sardia.es/servicios.html#auditoria): diagnóstico de cómo se trabaja en cada área, con los circuitos documentados y un plan priorizado.
+- [Automatización de flujos y RPA](https://sardia.es/servicios.html#automatizacion): automatización de circuitos concretos (factura a contabilidad, pedido a hoja, lead a CRM) y agentes o bots conversacionales por WhatsApp o correo.
+- [Datos y cuadros de mando](https://sardia.es/servicios.html#datos): limpieza y estructuración de datos, cuadros de mando a medida que se refrescan solos e informes automáticos.
+- [CRM y ERP a medida](https://sardia.es/servicios.html#crm): CRM y ERP conectados para pymes, con facturación y cobros, control de stock, entrada multicanal y seguimiento comercial.
+- [Formación en IA](https://sardia.es/servicios.html#formacion): talleres prácticos sobre los documentos reales del equipo, y formación a particulares y centros educativos.
+- [Predicción de negocio](https://sardia.es/servicios.html#ml): modelos de previsión de ventas, demanda o facturación a partir del histórico propio, con el margen de error traducido a euros.
+- [Creación de páginas web con SEO y AEO](https://sardia.es/servicios.html#web): webs animadas a medida, codificadas a mano, preparadas para el SEO clásico y para el AEO de los buscadores de IA.
+
+## Páginas
+
+- [Inicio](https://sardia.es/): qué hace SardIA, cómo trabaja y preguntas frecuentes.
+- [Servicios](https://sardia.es/servicios.html): el recorrido (auditoría, implementación express, arquitectura y acompañamiento) y el catálogo completo.
+- [Nosotros](https://sardia.es/nosotros.html): origen de la marca, a quién ayuda, quién está detrás y con qué herramientas trabaja.
+- [Contacto](https://sardia.es/contacto.html): formulario para solicitar una auditoría y datos de contacto.
+
+## Cómo trabaja
+
+Cuatro pasos: escuchar los procesos, traducir la respuesta a horas y euros, probar en pequeño con una implementación express y acompañar después. Precio cerrado por escrito antes de empezar, sin cuota fija ni contrato largo. Los datos del cliente no se comparten con terceros ni se usan para entrenar modelos externos.
+
+## Herramientas
+
+Claude, Gemini, n8n, Supabase, Power BI, PostgreSQL, Python, scikit-learn, Streamlit, Cloudflare, Vercel, Miro.
