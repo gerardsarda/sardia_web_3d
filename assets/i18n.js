@@ -231,11 +231,11 @@
     "Nosotros — SardIA": { ca: "Nosaltres — SardIA", en: "About — SardIA" },
 
     /* ===== nosotros: contenido ===== */
-    "Desde Valls, en el Camp de Tarragona, ayudamos a autónomos y negocios pequeños a modernizarse y a optimizar sus procesos, con trato directo y sin jerga.": { ca: "Des de Valls, al Camp de Tarragona, ajudem autònoms i negocis petits a modernitzar-se i a optimitzar els seus processos, amb tracte directe i sense jerga.", en: "From Valls, in the Camp de Tarragona, we help freelancers and small businesses modernise and optimise their processes, with a direct approach and no jargon." },
+    "Desde Valls, en el Camp de Tarragona, ayudamos a autónomos y negocios pequeños a modernizarse y a optimizar sus procesos, con trato directo y sin jerga.": { ca: "Des de Valls, al Camp de Tarragona, ajudem autònoms i negocis petits a modernitzar-se i a optimitzar els seus processos, amb tracte directe i sense tecnicismes.", en: "From Valls, in the Camp de Tarragona, we help freelancers and small businesses modernise and optimise their processes, with a direct approach and no jargon." },
     "Menos tareas a mano.": { ca: "Menys tasques a mà.", en: "Fewer manual tasks." },
     "Más tiempo para tu negocio.": { ca: "Més temps per al teu negoci.", en: "More time for your business." },
     "Una empresa cercana": { ca: "Una empresa propera", en: "A close-by company" },
-    "Con base en Valls, en el Camp de Tarragona, ayudamos a negocios de la zona. Sin intermediarios y sin jerga.": { ca: "Amb base a Valls, al Camp de Tarragona, ajudem negocis de la zona. Sense intermediaris i sense jerga.", en: "Based in Valls, in the Camp de Tarragona, we help local businesses. No middlemen and no jargon." },
+    "Con base en Valls, en el Camp de Tarragona, ayudamos a negocios de la zona. Sin intermediarios y sin jerga.": { ca: "Amb seu a Valls, al Camp de Tarragona, ajudem negocis de la zona. Sense intermediaris i sense tecnicismes.", en: "Based in Valls, in the Camp de Tarragona, we help local businesses. No middlemen and no jargon." },
     "Ayudamos a autónomos y negocios pequeños a ordenar sus datos y a automatizar lo repetitivo, para que dediquen el tiempo a lo que de verdad importa.": { ca: "Ajudem autònoms i negocis petits a ordenar les seves dades i a automatitzar el repetitiu, perquè dediquin el temps al que de debò importa.", en: "We help freelancers and small businesses organise their data and automate the repetitive work, so they can spend their time on what really matters." },
     "A autónomos y negocios pequeños": { ca: "A autònoms i negocis petits", en: "Freelancers and small businesses" },
     "que quieren modernizarse.": { ca: "que volen modernitzar-se.", en: "who want to modernise." },
