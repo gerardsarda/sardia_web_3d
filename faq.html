@@ -183,6 +183,44 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
 .cta .lead{max-width:52ch;margin:20px auto 0}
 .cta .btn-row{justify-content:center;margin-top:34px}
 
+/* CTA compacto con fondo marino */
+.cta{
+  padding:clamp(26px,3.6vw,40px) clamp(22px,4vw,48px);
+  background:
+    radial-gradient(circle at 12% 78%,rgba(120,220,255,.16) 0 3px,transparent 4px),
+    radial-gradient(circle at 18% 62%,rgba(120,220,255,.12) 0 2px,transparent 3px),
+    radial-gradient(circle at 86% 70%,rgba(120,220,255,.14) 0 4px,transparent 5px),
+    radial-gradient(circle at 80% 48%,rgba(120,220,255,.1) 0 2px,transparent 3px),
+    radial-gradient(circle at 93% 30%,rgba(120,220,255,.1) 0 3px,transparent 4px),
+    linear-gradient(105deg,transparent 28%,rgba(46,211,242,.07) 36%,transparent 46%),
+    linear-gradient(80deg,transparent 52%,rgba(46,211,242,.06) 60%,transparent 70%),
+    radial-gradient(ellipse at 50% -10%,rgba(46,211,242,.22),transparent 60%),
+    linear-gradient(180deg,#0B3552 0%,#08243C 55%,#041525 100%);
+}
+.cta__mark{display:block;margin-inline:auto}
+.cta__mark--mascot{width:clamp(96px,11vw,128px);margin-bottom:6px;filter:drop-shadow(0 14px 28px rgba(46,211,242,.3))}
+.cta h2{font-size:clamp(1.35rem,2.4vw,1.8rem);max-width:26ch}
+.cta .lead{font-size:.9375rem;max-width:60ch;margin-top:12px}
+.cta .btn-row{margin-top:22px}
+/* CTA en fila: mascota | texto | botones */
+.cta{text-align:left}
+.cta__body{
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;
+  grid-template-areas:"mark title btns" "mark lead btns";
+  column-gap:clamp(18px,3vw,36px);align-items:center;
+}
+.cta__mark--mascot{grid-area:mark;width:clamp(84px,9vw,112px);margin:0}
+.cta h2{grid-area:title;max-width:none;margin:0;align-self:end}
+.cta .lead{grid-area:lead;max-width:62ch;margin:8px 0 0;align-self:start}
+.cta .btn-row{grid-area:btns;margin:0;justify-content:flex-end;flex-wrap:wrap}
+@media (max-width:900px){
+  .cta{text-align:center}
+  .cta__body{grid-template-columns:1fr;grid-template-areas:"mark" "title" "lead" "btns";row-gap:6px;justify-items:center}
+  .cta__mark--mascot{margin:0 auto 4px}
+  .cta .lead{margin-inline:auto}
+  .cta .btn-row{justify-content:center;margin-top:16px}
+}
+
 .footer{border-top:1px solid var(--line);padding:clamp(56px,7vw,80px) 0 36px;background:var(--bg)}
 .footer__top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px}
 .footer__brand img{height:36px;margin-bottom:20px}
@@ -365,6 +403,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
     <div class="wrap">
       <div class="cta">
         <div class="cta__body">
+          <img class="cta__mark cta__mark--mascot" src="assets/mascota.png" alt="Mascota de SardIA, una manta raya">
           <h2>¿Queda alguna duda?</h2>
           <p class="lead">Cuéntanos tu caso en una llamada de 20 minutos. Sin compromiso y sin presentaciones de 40 diapositivas.</p>
           <div class="btn-row">
