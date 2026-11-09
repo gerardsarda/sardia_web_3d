@@ -679,8 +679,18 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
   .svc-tabs__btn{flex:0 0 auto;padding:11px 15px;font-size:.875rem}
   .svc-tab__media{aspect-ratio:4/3}
   .svc-tab__media--portrait{padding:18px}
-  .stack__item{position:static;padding-bottom:16px}
-  .stack__card{box-shadow:none}
+  /* recorrido: la pila sticky se mantiene en móvil, con tarjetas compactas */
+  .stack__item{top:calc(var(--header-h) + 10px + var(--i,0) * 12px);padding-bottom:14px}
+  .stack__card{padding:20px 20px 22px;box-shadow:0 -14px 34px -22px rgba(0,0,0,.95)}
+  .stack__ghost{font-size:4.5rem;top:-.1em}
+  .stack__head{margin-bottom:8px}
+  .stack__head .funnel__badge{display:none}
+  .stack__card h3{font-size:1.3rem;margin-bottom:8px}
+  .stack__card p{font-size:.9375rem;line-height:1.5}
+  /* menos texto en móvil */
+  .svc-intro .lead,
+  .svc-tab__intro .muted,
+  .svc-tab .note{display:none}
 }
 @media (max-width:960px){
   .grid-4{grid-template-columns:repeat(2,1fr)}
@@ -879,13 +889,6 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
             <p>Un proyecto no termina cuando se entrega. Reuniones periódicas. Si algo no se usa como esperábamos, se cambia.</p>
           </div>
         </article>
-      </div>
-
-      <div class="stats stats--text" style="margin-top:40px">
-        <div class="stat"><b>Todas las áreas</b><span>Marketing, ventas, operaciones y administración.</span></div>
-        <div class="stat"><b>Con quien hace el trabajo</b><span>Hablamos con quienes realizan el trabajo diario.</span></div>
-        <div class="stat"><b>Flujos documentados</b><span>Cómo se trabaja hoy, paso a paso, antes de proponer cambiar nada.</span></div>
-        <div class="stat"><b>Plan priorizado</b><span>Qué aporta más con menos esfuerzo, qué espera y qué no compensa tocar.</span></div>
       </div>
     </div>
   </section>
