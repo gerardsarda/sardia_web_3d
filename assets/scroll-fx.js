@@ -40,11 +40,12 @@
 
   /* Escalonado suave entre hermanos del mismo contenedor (cards de una rejilla,
      filas de servicios…) para que no entren todos a la vez. */
+  var mobile = window.matchMedia("(max-width: 760px)").matches;
   var countByParent = new Map();
   els.forEach(function (el) {
     var parent = el.parentNode;
     var i = countByParent.get(parent) || 0;
-    if (i > 0) el.style.transitionDelay = Math.min(i * 60, 240) + "ms";
+    if (i > 0 && !mobile) el.style.transitionDelay = Math.min(i * 60, 240) + "ms";
     countByParent.set(parent, i + 1);
   });
 
@@ -55,7 +56,7 @@
         io.unobserve(entry.target); /* revelar una vez, sin re-disparar al subir */
       }
     });
-  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+  }, mobile ? { threshold: 0, rootMargin: "0px 0px 12% 0px" } : { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
 
   els.forEach(function (el) { io.observe(el); });
 })();

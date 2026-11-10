@@ -194,7 +194,7 @@
   /* Bucle continuo: lee la posición cada frame y suaviza hacia ella. */
   function loop() {
     var p = progress();
-    current += (p - current) * 0.16;
+    current += (p - current) * (window.innerWidth < 760 ? 0.32 : 0.16);
     if (Math.abs(p - current) < 0.0004) current = p;
     paint();
     updateBeats(p);

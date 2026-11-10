@@ -66,6 +66,24 @@ html.sfx-ready :is(
   transform:none;
 }
 
+/* Móvil: reveal corto y ligero (el scroll táctil es rápido; 0,9 s se siente lento) */
+@media (max-width:760px){
+  html.sfx-ready :is(
+    .section-head,.card,.step,.funnel__item,.stack__card,.svc-row,.svc-block,
+    .svc-split,.svc-photo,.showcase,.stats,.contrast__col,.profile,.media,.split,
+    .side-block,.form-panel,.logo-wall,.manifesto .wrap,.hero__content,.page-hero .wrap
+  ){
+    transform:translateY(14px);
+    transition:opacity .35s ease-out,transform .4s cubic-bezier(.22,.61,.36,1);
+    transition-delay:0ms!important;
+  }
+  html.sfx-ready :is(
+    .section-head,.card,.step,.funnel__item,.stack__card,.svc-row,.svc-block,
+    .svc-split,.svc-photo,.showcase,.stats,.contrast__col,.profile,.media,.split,
+    .side-block,.form-panel,.logo-wall,.manifesto .wrap,.hero__content,.page-hero .wrap
+  ).is-visible{transform:none}
+}
+
 /* --- 2) MARQUEE DE LOGOS -------------------------------------- */
 .logo-wall--marquee{
   display:block;
