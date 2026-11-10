@@ -134,3 +134,25 @@ html.sfx-ready :is(
     animation:none;width:auto;flex-wrap:wrap;justify-content:center;
   }
 }
+
+/* --- Táctil: sin recuadro azul del navegador al tocar --------------- */
+html{-webkit-tap-highlight-color:transparent}
+a,button,summary,[role="button"]{-webkit-tap-highlight-color:transparent}
+/* el aro de foco solo con teclado, nunca al tocar/clicar con ratón */
+a:focus:not(:focus-visible),button:focus:not(:focus-visible),
+summary:focus:not(:focus-visible),[role="button"]:focus:not(:focus-visible){outline:none}
+
+/* --- Menú móvil: borde inferior redondeado y flotante, no corte recto --- */
+.mobile-nav{
+  left:10px;right:10px;
+  max-height:calc(100vh - var(--header-h) - 24px);
+  max-height:calc(100dvh - var(--header-h) - 24px);
+  border:1px solid var(--line-strong,var(--line));
+  border-radius:0 0 22px 22px;
+  background:rgba(8,26,42,.94);
+  -webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);
+  box-shadow:0 28px 60px -18px rgba(0,0,0,.75);
+}
+.mobile-nav ul{padding:8px 0 4px}
+.mobile-nav li:last-child a{border-bottom:0}
+.mobile-nav .wrap{padding-bottom:22px}
