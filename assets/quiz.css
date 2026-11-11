@@ -42,6 +42,9 @@
 }
 .quiz__opt:active{transform:scale(.985)}
 .quiz__opt:focus-visible,.quiz__back:focus-visible,.quiz__close:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.quiz__opt:disabled{opacity:.4;cursor:not-allowed}
+.quiz__next{justify-self:start;margin-top:6px}
+.quiz__next:disabled{opacity:.4;cursor:not-allowed}
 .quiz__opt.is-picked{border-color:var(--volt);background:rgba(228,253,18,.08)}
 .quiz__back{
   margin-top:18px;background:none;border:0;cursor:pointer;color:var(--text-dim);font-size:.9063rem;padding:6px 0;

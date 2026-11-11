@@ -137,7 +137,7 @@
     /* ===== servicios: page-hero ===== */
     "Del diagnóstico": { ca: "Del diagnòstic", en: "From diagnosis" },
     "a la arquitectura": { ca: "a l'arquitectura", en: "to architecture" },
-    "Cuatro escalones y un catálogo. Nadie sube al siguiente escalón hasta que el anterior ha dado un resultado que se puede ver.": { ca: "Quatre esglaons i un catàleg. Ningú puja a l'esglaó següent fins que l'anterior ha donat un resultat que es pot veure.", en: "Four steps and a catalogue. No one moves up to the next step until the previous one has produced a result you can see." },
+    "Un catálogo para elegir y cuatro escalones para no equivocarte. Nadie sube al siguiente hasta que el anterior ha dado un resultado que se puede ver.": { ca: "Un catàleg per triar i quatre esglaons per no equivocar-te. Ningú puja al següent fins que l'anterior ha donat un resultat que es pot veure.", en: "A catalogue to choose from and four steps so you don't go wrong. No one moves up to the next until the previous one has produced a result you can see." },
     "Ver el catálogo": { ca: "Veure el catàleg", en: "See the catalogue" },
 
     /* ===== servicios: el recorrido ===== */
@@ -342,6 +342,22 @@
     "Formación y acompañamiento": { ca: "Formació i acompanyament", en: "Training and support" },
     "Formamos a tu equipo y acompañamos en cada paso de la implementación.": { ca: "Formem el teu equip i acompanyem en cada pas de la implementació.", en: "We train your team and support you at every step of the implementation." },
     "No dejamos la IA instalada y nos vamos. Tu equipo aprende a usarla, a mantenerla y a sacarle partido.": { ca: "No deixem la IA instal·lada i marxem. El teu equip aprèn a usar-la, a mantenir-la i a treure'n profit.", en: "We don't install the AI and leave. Your team learns to use it, maintain it and get the most out of it." },
+
+    /* ===== inicio: servicios + cómo trabajamos ===== */
+    "Elige el que necesitas o deja que el quiz te diga cuál te encaja.": { ca: "Tria el que necessites o deixa que el quiz et digui quin t'encaixa.", en: "Pick what you need, or let the quiz tell you which one fits." },
+    "Tus cifras ordenadas y al día, para decidir sin dudar.": { ca: "Les teves xifres ordenades i al dia, per decidir sense dubtar.", en: "Your figures organised and up to date, so you can decide with confidence." },
+    "Lo repetitivo se define una vez y deja de ocupar a nadie.": { ca: "El que és repetitiu es defineix una vegada i deixa d'ocupar ningú.", en: "Repetitive work is defined once and stops taking anyone's time." },
+    "Clientes, ventas y gestión conectados en un solo lugar.": { ca: "Clients, vendes i gestió connectats en un sol lloc.", en: "Clients, sales and admin connected in one place." },
+    "Tu equipo aprende a usar la IA con sus propios documentos.": { ca: "El teu equip aprèn a utilitzar la IA amb els seus propis documents.", en: "Your team learns to use AI with its own documents." },
+    "Estima lo que va a pasar a partir de tu propio histórico.": { ca: "Estima què passarà a partir del teu propi històric.", en: "Forecast what's coming from your own history." },
+    "Webs animadas y rápidas, hechas a medida.": { ca: "Webs animades i ràpides, fetes a mida.", en: "Animated, fast websites, built to order." },
+    "Ver todos los servicios": { ca: "Veure tots els serveis", en: "See all services" },
+    "Cómo trabajamos": { ca: "Com treballem", en: "How we work" },
+    "Miramos cómo se trabaja y te damos un plan priorizado.": { ca: "Mirem com es treballa i et donem un pla prioritzat.", en: "We look at how work really gets done and give you a prioritised plan." },
+    "Montamos un proceso y lo dejamos funcionando.": { ca: "Muntem un procés i el deixem funcionant.", en: "We build one process and leave it running." },
+    "Desarrollo a medida, entregado por versiones.": { ca: "Desenvolupament a mida, lliurat per versions.", en: "Custom development, delivered in versions." },
+    "Seguimos contigo para que todo siga funcionando.": { ca: "Continuem amb tu perquè tot segueixi funcionant.", en: "We stay with you so everything keeps working." },
+    "Ver cómo trabajamos": { ca: "Veure com treballem", en: "See how we work" },
 
     /* ===== inicio: tarjeta enlace a FAQ ===== */
     "Las dudas que salen en casi todas las primeras reuniones, respondidas antes de que te las tengas que preguntar.": { ca: "Els dubtes que surten en gairebé totes les primeres reunions, resposts abans que els hagis de demanar.", en: "The questions that come up in almost every first meeting, answered before you have to ask." },

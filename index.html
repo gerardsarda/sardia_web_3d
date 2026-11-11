@@ -155,6 +155,13 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
   background:rgba(6,21,35,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
   border-bottom:1px solid var(--line);
 }
+/* Inicio: la cabecera flota sobre el vídeo (transparente) y se vuelve sólida al salir del hero */
+.header{margin-bottom:calc(var(--header-h) * -1);transition:background .35s var(--ease),border-color .35s var(--ease),backdrop-filter .35s var(--ease)}
+.header:not(.header--solid){
+  background:linear-gradient(180deg,rgba(4,18,28,.55) 0%,rgba(4,18,28,0) 100%) no-repeat border-box;
+  background-origin:border-box;
+  border-bottom-color:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;
+}
 .header__inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:flex;align-items:center;flex-shrink:0}
 .brand img{height:46px;width:auto}
@@ -875,7 +882,6 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
     <div class="header__cta">
       <!-- REVISAR: si quieres el teléfono visible en el header, añade aquí
            <a class="btn btn--ghost btn--sm" href="tel:+34XXXXXXXXX">+34 XXX XXX XXX</a> -->
-      <a class="btn btn--primary btn--sm" href="contacto.html">Reserva una llamada</a>
       <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
@@ -999,6 +1005,20 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
 </footer>
 
 <script>
+(function(){
+  var hdr = document.querySelector('.header');
+  var hero = document.querySelector('[data-hero-scroll]');
+  if(hdr && hero){
+    var upd = function(){
+      var out = hero.getBoundingClientRect().bottom <= hdr.offsetHeight + 4;
+      var menu = document.querySelector('[data-menu-panel]');
+      hdr.classList.toggle('header--solid', out || (menu && menu.classList.contains('is-open')));
+    };
+    addEventListener('scroll', upd, {passive:true}); addEventListener('resize', upd);
+    document.addEventListener('click', function(){ setTimeout(upd, 0); });
+    upd();
+  }
+})();
 (function(){
   var btn = document.querySelector('[data-menu-toggle]');
   var panel = document.querySelector('[data-menu-panel]');

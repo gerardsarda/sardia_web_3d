@@ -10,7 +10,7 @@
     var key = new URLSearchParams(location.search).get('servicio');
     var ta = form.querySelector('#contexto');
     var names = {
-      auditoria: { es: 'Auditoría de procesos', ca: 'Auditoria de processos', en: 'Process audit' },
+      agentes: { es: 'Agentes de IA', ca: 'Agents d\'IA', en: 'AI agents' },
       datos: { es: 'Datos y cuadros de mando', ca: 'Dades i quadres de comandament', en: 'Data and dashboards' },
       automatizacion: { es: 'Automatización de flujos', ca: 'Automatització de fluxos', en: 'Workflow automation' },
       crm: { es: 'CRM y ERP automatizados', ca: 'CRM i ERP automatitzats', en: 'Automated CRM and ERP' },
