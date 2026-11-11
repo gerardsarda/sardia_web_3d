@@ -63,7 +63,13 @@
 .quiz__res-cta{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
 @media (max-width:520px){
   .quiz__res-cta .btn{width:100%}
-  .quiz__opt{padding:14px 15px}
+  .quiz{padding:10px}
+  .quiz__panel{padding:18px 16px;max-height:calc(100dvh - 20px)}
+  .quiz__top{margin-bottom:14px}
+  .quiz__opts{gap:8px;margin-top:14px}
+  .quiz__opt{padding:12px 14px;font-size:.9375rem}
+  .quiz__hint{margin-top:4px}
+  .quiz__back{margin-top:10px}
 }
 @media (prefers-reduced-motion:reduce){
   .quiz,.quiz__panel,.quiz__bar i{transition:none}

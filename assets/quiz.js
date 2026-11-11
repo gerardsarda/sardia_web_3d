@@ -27,7 +27,7 @@
   var NAME = {
     agentes:        { es: "Agentes de IA",              ca: "Agents d'IA",                   en: "AI agents" },
     datos:         { es: "Datos y cuadros de mando",   ca: "Dades i quadres de comandament", en: "Data and dashboards" },
-    automatizacion: { es: "Automatización de flujos",   ca: "Automatització de fluxos",      en: "Workflow automation" },
+    automatizacion: { es: "Automatización de procesos",   ca: "Automatització de processos",      en: "Process automation" },
     crm:            { es: "CRM y ERP automatizados",    ca: "CRM i ERP automatitzats",       en: "Automated CRM and ERP" },
     formacion:      { es: "Formación",                  ca: "Formació",                      en: "Training" },
     ml:             { es: "Predicción de negocio",      ca: "Predicció de negoci",           en: "Business forecasting" },
@@ -44,8 +44,8 @@
       ca: "Les teves dades hi són, però estan disperses. Les ordenem, les connectem i les deixem en quadres de comandament que s'actualitzen sols, per decidir amb xifres fiables.",
       en: "Your data exists but it's scattered. We organise it, connect it and deliver dashboards that refresh themselves, so you decide on reliable numbers." },
     automatizacion: {
-      es: "Las tareas repetitivas se hacen a mano y te roban horas. Conectamos las herramientas que ya usas y automatizamos esos flujos para que la información se mueva sola.",
-      ca: "Les tasques repetitives es fan a mà i et roben hores. Connectem les eines que ja fas servir i automatitzem aquests fluxos perquè la informació es mogui sola.",
+      es: "Las tareas repetitivas se hacen a mano y te roban horas. Conectamos las herramientas que ya usas y automatizamos esos procesos para que la información se mueva sola.",
+      ca: "Les tasques repetitives es fan a mà i et roben hores. Connectem les eines que ja fas servir i automatitzem aquests processos perquè la informació es mogui sola.",
       en: "Repetitive tasks are done by hand and eat up your hours. We connect the tools you already use and automate those flows so information moves on its own." },
     crm: {
       es: "Clientes, pedidos y seguimiento viven en hojas de cálculo y mensajes sueltos. Montamos un CRM y ERP a medida, automatizado, donde todo el equipo trabaja con la misma información.",
@@ -70,16 +70,16 @@
 
   var QUESTIONS = [
     { q: { es: "¿Qué es lo que más te frena hoy?", ca: "Què és el que més et frena avui?", en: "What holds you back most today?" },
-      hint: { es: "Elige hasta 3 que se parezcan a tu caso.", ca: "Tria'n fins a 3 que s'assemblin al teu cas.", en: "Pick up to 3 closest to your case." },
+      hint: { es: "Elige hasta 3.", ca: "Tria'n fins a 3.", en: "Pick up to 3." },
       w: 3, multi: true,
       o: [
-        O("Pierdo horas en tareas repetitivas hechas a mano", "Perdo hores en tasques repetitives fetes a mà", "I lose hours on repetitive manual tasks", { automatizacion: 3, agentes: 1 }),
-        O("Mis datos están dispersos y no me fío de las cifras", "Tinc les dades disperses i no puc fiar-me de les xifres", "My data is scattered and I don't trust the numbers", { datos: 3 }),
-        O("Clientes, pedidos y gestión repartidos entre hojas de cálculo y mensajes", "Clients, comandes i gestió escampats entre fulls de càlcul i missatges", "Clients, orders and admin spread across spreadsheets and messages", { crm: 3, automatizacion: 1 }),
-        O("Quiero un asistente de IA que atienda a clientes o resuelva tareas por mí", "Vull un assistent d'IA que atengui els clients o resolgui tasques per mi", "I want an AI assistant that handles clients or tasks for me", { agentes: 3, automatizacion: 1 }),
-        O("Mi equipo no sabe usar bien la IA", "El meu equip no sap utilitzar bé la IA", "My team can't use AI with confidence", { formacion: 3, agentes: 1 }),
-        O("Quiero anticipar ventas, demanda o riesgos", "Vull anticipar vendes, demanda o riscos", "I want to forecast sales, demand or risk", { ml: 3, datos: 1 }),
-        O("Mi web no está a la altura de mi negocio", "La meva web no està a l'altura del meu negoci", "My website isn't up to my business", { web: 3 })
+        O("Pierdo horas en tareas repetitivas", "Perdo hores en tasques repetitives", "Repetitive manual tasks", { automatizacion: 3, agentes: 1 }),
+        O("Datos dispersos, cifras dudosas", "Dades disperses, xifres dubtoses", "Scattered data, shaky numbers", { datos: 3 }),
+        O("Gestión en Excel y mensajes", "Gestió en Excel i missatges", "Admin in Excel and messages", { crm: 3, automatizacion: 1 }),
+        O("Quiero un asistente de IA", "Vull un assistent d'IA", "I want an AI assistant", { agentes: 3, automatizacion: 1 }),
+        O("Mi equipo no sabe usar la IA", "El meu equip no sap usar la IA", "My team can't use AI well", { formacion: 3, agentes: 1 }),
+        O("Quiero anticipar ventas", "Vull anticipar vendes", "I want to forecast sales", { ml: 3, datos: 1 }),
+        O("Mi web no está a la altura", "La meva web no és prou bona", "My website falls short", { web: 3 })
       ] },
     { q: { es: "¿Cómo trabajáis hoy con la información?", ca: "Com treballeu avui amb la informació?", en: "How do you work with information today?" },
       hint: { es: "", ca: "", en: "" }, w: 1,

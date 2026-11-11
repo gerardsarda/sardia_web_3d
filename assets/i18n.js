@@ -33,7 +33,7 @@
     "Cerrar menú": { ca: "Tancar menú", en: "Close menu" },
     "Consultoría de datos e inteligencia artificial. Domina las nuevas corrientes: Impulsa tu negocio hacia la modernidad": { ca: "Consultoria de dades i intel·ligència artificial. Domina els nous corrents: impulsa el teu negoci cap a la modernitat", en: "Data and artificial intelligence consultancy. Master the new currents: move your business into the modern era" },
     "Auditoría de procesos": { ca: "Auditoria de processos", en: "Process audit" },
-    "Automatización de flujos": { ca: "Automatització de fluxos", en: "Workflow automation" },
+    "Automatización de procesos": { ca: "Automatització de processos", en: "Process automation" },
     "Datos y cuadros de mando": { ca: "Dades i quadres de comandament", en: "Data and dashboards" },
     "CRM y ERP automatizados": { ca: "CRM i ERP automatitzats", en: "Automated CRM and ERP" },
     "Formación": { ca: "Formació", en: "Training" },
@@ -131,7 +131,7 @@
 
     /* ===== servicios: meta / title / og ===== */
     "Servicios — SardIA": { ca: "Serveis — SardIA", en: "Services — SardIA" },
-    "Auditoría de procesos, automatización de flujos, cuadros de mando, CRM y ERP a medida, formación, modelos de predicción y creación de páginas web con SEO y AEO.": { ca: "Auditoria de processos, automatització de fluxos, quadres de comandament, CRM i ERP a mida, formació, models de predicció i creació de pàgines web amb SEO i AEO.", en: "Process audits, workflow automation, dashboards, custom CRM and ERP, training, forecasting models and web design with SEO and AEO." },
+    "Auditoría de procesos, automatización de procesos, cuadros de mando, CRM y ERP a medida, formación, modelos de predicción y creación de páginas web con SEO y AEO.": { ca: "Auditoria de processos, automatització de processos, quadres de comandament, CRM i ERP a mida, formació, models de predicció i creació de pàgines web amb SEO i AEO.", en: "Process audits, process automation, dashboards, custom CRM and ERP, training, forecasting models and web design with SEO and AEO." },
     "Del diagnóstico inicial a la arquitectura completa, paso a paso y sin saltos.": { ca: "Del diagnòstic inicial a l'arquitectura completa, pas a pas i sense salts.", en: "From the initial diagnosis to the full architecture, step by step and with no leaps." },
 
     /* ===== servicios: page-hero ===== */
@@ -467,7 +467,7 @@
       "line-height:1;transition:color .2s var(--ease),background .2s var(--ease)}" +
       ".lang-switch button:hover{color:var(--text)}" +
       ".lang-switch button[aria-pressed='true']{background:var(--volt);color:#04212C}" +
-      "@media (max-width:400px){.lang-switch button{padding:6px 7px;letter-spacing:.03em}}";
+      "@media (max-width:400px){.lang-switch button{padding:10px 8px;letter-spacing:.03em}}";
     var st = document.createElement("style");
     st.setAttribute("data-i18n-style", "1");
     st.textContent = css;

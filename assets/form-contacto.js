@@ -12,7 +12,7 @@
     var names = {
       agentes: { es: 'Agentes de IA', ca: 'Agents d\'IA', en: 'AI agents' },
       datos: { es: 'Datos y cuadros de mando', ca: 'Dades i quadres de comandament', en: 'Data and dashboards' },
-      automatizacion: { es: 'Automatización de flujos', ca: 'Automatització de fluxos', en: 'Workflow automation' },
+      automatizacion: { es: 'Automatización de procesos', ca: 'Automatització de processos', en: 'Process automation' },
       crm: { es: 'CRM y ERP automatizados', ca: 'CRM i ERP automatitzats', en: 'Automated CRM and ERP' },
       formacion: { es: 'Formación', ca: 'Formació', en: 'Training' },
       ml: { es: 'Predicción de negocio', ca: 'Predicció de negoci', en: 'Business forecasting' },

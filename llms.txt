@@ -7,7 +7,7 @@ SardIA es una consultoría fundada por Gerard Sardà Calull (Analista de Datos e
 ## Servicios
 
 - [Auditoría de procesos](https://sardia.es/servicios.html#auditoria): diagnóstico de cómo se trabaja en cada área, con los circuitos documentados y un plan priorizado.
-- [Automatización de flujos y RPA](https://sardia.es/servicios.html#automatizacion): automatización de circuitos concretos (factura a contabilidad, pedido a hoja, lead a CRM) y agentes o bots conversacionales por WhatsApp o correo.
+- [Automatización de procesos y RPA](https://sardia.es/servicios.html#automatizacion): automatización de circuitos concretos (factura a contabilidad, pedido a hoja, lead a CRM) y agentes o bots conversacionales por WhatsApp o correo.
 - [Datos y cuadros de mando](https://sardia.es/servicios.html#datos): limpieza y estructuración de datos, cuadros de mando a medida que se refrescan solos e informes automáticos.
 - [CRM y ERP a medida](https://sardia.es/servicios.html#crm): CRM y ERP conectados para pymes, con facturación y cobros, control de stock, entrada multicanal y seguimiento comercial.
 - [Formación en IA](https://sardia.es/servicios.html#formacion): talleres prácticos sobre los documentos reales del equipo, y formación a particulares y centros educativos.

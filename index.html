@@ -251,7 +251,10 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
   }
   .hero__beat--center .lead,.hero__beat--center .btn-row{margin-inline:0}
   .hero__beat--center .btn-row{justify-content:flex-start}
-  .hero__beat::before{inset:-16% -8%}
+  /* el panel de cristal queda dentro de la pantalla: con inset negativo se salía
+     por los lados y solo se veían su borde superior e inferior (dos rayas) */
+  .hero__beat{padding:22px 20px}
+  .hero__beat::before{inset:0}
 }
 /* primer bloque (intro): siempre centrado y con el botón visible desde el scroll 0 */
 .hero__beat.hero__beat--intro{
@@ -979,7 +982,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
         <h4>Servicios</h4>
         <ul>
           <li><a href="servicios.html#auditoria">Auditoría de procesos</a></li>
-          <li><a href="servicios.html#automatizacion">Automatización de flujos</a></li>
+          <li><a href="servicios.html#automatizacion">Automatización de procesos</a></li>
           <li><a href="servicios.html#datos">Datos y cuadros de mando</a></li>
           <li><a href="servicios.html#crm">CRM y ERP automatizados</a></li>
           <li><a href="servicios.html#formacion">Formación</a></li>
