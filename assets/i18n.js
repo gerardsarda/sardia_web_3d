@@ -55,6 +55,10 @@
     "Ordenamos tus datos, conectamos las herramientas que ya usas con nueva tecnología y automatizamos lo que hoy se hace a mano.": { ca: "Ordenem les teves dades, connectem les eines que ja fas servir amb tecnologia nova i automatitzem el que avui es fa a mà.", en: "We organise your data, connect the tools you already use with new technology and automate what's done by hand today." },
     "Solicitar auditoría": { ca: "Sol·licitar auditoria", en: "Request an audit" },
     "Ver servicios": { ca: "Veure serveis", en: "See services" },
+    "Valls · Consultoría de datos e IA": { ca: "Valls · Consultoria de dades i IA", en: "Valls · Data and AI consultancy" },
+    "Consultoría de datos e inteligencia artificial en Valls. Ordenamos tus datos y automatizamos lo que hoy se hace a mano.": { ca: "Consultoria de dades i intel·ligència artificial a Valls. Ordenem les teves dades i automatitzem el que avui es fa a mà.", en: "Data and artificial intelligence consultancy in Valls. We organise your data and automate what's done by hand today." },
+    "Descubre qué servicio te encaja": { ca: "Descobreix quin servei t'encaixa", en: "Find out which service fits you" },
+    "Hablar con nosotros": { ca: "Parlar amb nosaltres", en: "Talk to us" },
 
     /* ===== inicio: por qué ===== */
     "Por qué SardIA": { ca: "Per què SardIA", en: "Why SardIA" },

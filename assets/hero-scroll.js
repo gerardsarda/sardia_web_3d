@@ -117,6 +117,7 @@
   }
 
   function applySide(b) {
+    if (b.fallback === "center") return;       /* bloque intro: siempre centrado */
     var s = sideForBeat(b);
     b.el.classList.remove("hero__beat--left", "hero__beat--right");
     b.el.classList.add("hero__beat--" + s);
@@ -138,7 +139,7 @@
         b.el.classList.add("is-active");
         b.el.style.opacity = o.toFixed(3);
         var mid = (b.from + b.to) / 2;
-        b.el.style.setProperty("--px", ((p - mid) * -70).toFixed(1) + "px");  /* parallax sutil */
+        if (b.fallback !== "center") b.el.style.setProperty("--px", ((p - mid) * -70).toFixed(1) + "px");  /* parallax sutil */
       } else if (b.active || b.el.classList.contains("is-active")) {
         b.active = false;
         b.el.classList.remove("is-active");
@@ -168,7 +169,7 @@
   if (reduce) {
     host.classList.add("hero--static");
     if (beats[0]) {
-      beats[0].el.classList.add("is-active", "hero__beat--center");
+      beats[0].el.classList.add("is-active");
       beats[0].el.style.opacity = "1";
     }
     var idx = Math.round(0.32 * (Math.max(1, total) - 1));

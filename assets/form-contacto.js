@@ -3,6 +3,33 @@
   var SUPABASE_KEY = 'sb_publishable_5NXhZna9gB_YUa1YhWdN4w_wqzflZ_G';
 
   var form = document.getElementById('form-contacto');
+
+  /* Viene del quiz de la home: ?servicio=crm → precarga el contexto */
+  (function prefillFromQuiz() {
+    if (!form) return;
+    var key = new URLSearchParams(location.search).get('servicio');
+    var ta = form.querySelector('#contexto');
+    var names = {
+      auditoria: { es: 'Auditoría de procesos', ca: 'Auditoria de processos', en: 'Process audit' },
+      datos: { es: 'Datos y cuadros de mando', ca: 'Dades i quadres de comandament', en: 'Data and dashboards' },
+      automatizacion: { es: 'Automatización de flujos', ca: 'Automatització de fluxos', en: 'Workflow automation' },
+      crm: { es: 'CRM y ERP automatizados', ca: 'CRM i ERP automatitzats', en: 'Automated CRM and ERP' },
+      formacion: { es: 'Formación', ca: 'Formació', en: 'Training' },
+      ml: { es: 'Predicción de negocio', ca: 'Predicció de negoci', en: 'Business forecasting' },
+      web: { es: 'Creación de páginas web', ca: 'Creació de pàgines web', en: 'Web design' }
+    };
+    var tpl = {
+      es: 'Me interesa: {s} (resultado del quiz). ',
+      ca: 'M\'interessa: {s} (resultat del quiz). ',
+      en: 'I\'m interested in: {s} (quiz result). '
+    };
+    if (!key || !names[key] || !ta || ta.value) return;
+    var l;
+    try { l = localStorage.getItem('sardia_lang'); } catch (e) {}
+    if (!tpl[l]) l = 'ca';
+    ta.value = tpl[l].replace('{s}', names[key][l]);
+  })();
+
   if (!form || !window.supabase) return;
 
   var client = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
