@@ -1,0 +1,101 @@
+/* ============================================================
+   SardIA — tipografía Archivo + formas cuadradas
+   Se carga después del <style> de cada página y lo sobrescribe.
+   Reglas:
+   - Titulares en Archivo condensada, mayúsculas.
+   - Etiquetas (eyebrows) en Archivo condensada, sin monoespaciada.
+   - Amarillo (--volt) solo para botones de compra/quiz y palabras
+     muy destacadas (.hl). Todo lo demás pasa a cian.
+   - Esquinas más rectas en botones, pastillas y tarjetas.
+   ============================================================ */
+
+:root{
+  --font:"Archivo",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --r-sm:3px;
+  --r:6px;
+  --r-lg:8px;
+  --pill:4px;
+}
+
+body,button,input,select,textarea{font-family:var(--font)}
+
+/* ---------- titulares ---------- */
+h1,h2{
+  font-family:var(--font);font-stretch:62%;font-weight:800;
+  text-transform:uppercase;letter-spacing:-.005em;line-height:.95;
+}
+h2{font-size:clamp(2.3rem,5vw,3.8rem)}
+.display{font-size:clamp(2.9rem,7.6vw,5.6rem)}
+.hero__beat--intro h1{font-size:clamp(3rem,8.4vw,6.4rem);line-height:.92}
+h3{font-family:var(--font);font-stretch:85%;font-weight:700;letter-spacing:-.01em}
+h4{font-family:var(--font);font-stretch:75%;font-weight:700;letter-spacing:0}
+
+/* palabra destacada: cian por defecto, bloque amarillo solo con .hl--volt */
+.hl{color:var(--cyan)}
+.hl--volt{
+  color:var(--bg);background:var(--volt);padding:0 .12em;
+  -webkit-box-decoration-break:clone;box-decoration-break:clone;
+}
+
+/* ---------- etiquetas (antes JetBrains Mono) ---------- */
+.eyebrow,
+.contrast__tag,
+.footer h4,
+.profile__role,
+.hero__cue,
+.mascot-note__sign,
+.svc-block h3 em,
+.quiz__count,
+.quiz__res-eyebrow{
+  font-family:var(--font);font-stretch:75%;font-weight:700;
+  font-size:1.05rem;letter-spacing:.01em;text-transform:uppercase;font-style:normal;
+}
+.eyebrow::before{display:none}
+.footer h4{font-size:.95rem}
+.hero__cue{font-size:.85rem}
+
+/* ---------- numeración: solo el número, sin "PASO" ni barras ---------- */
+.funnel__n{display:none}
+.step__n{
+  font-family:var(--font);font-stretch:62%;font-weight:800;font-size:2.6rem;
+  line-height:1;letter-spacing:0;color:var(--cyan);margin-bottom:12px;
+}
+.stack__ghost{
+  font-family:var(--font);font-stretch:62%;font-weight:800;letter-spacing:0;
+  top:.02em;color:rgba(150,196,226,.16);
+}
+/* etiqueta del recorrido en amarillo (sección sin botón clave) */
+.stack__head .funnel__badge{
+  font-family:var(--font);font-stretch:75%;font-weight:700;font-size:1rem;
+  text-transform:uppercase;letter-spacing:.01em;color:var(--volt);
+}
+
+/* ---------- pastilla de Valls: sin punto ---------- */
+.hero-pill{
+  font-family:var(--font);font-stretch:75%;font-weight:700;
+  text-transform:uppercase;letter-spacing:.01em;font-size:1rem;
+}
+.hero-pill::before{display:none}
+
+/* ---------- botones más rectos y con más carácter ---------- */
+.btn{font-family:var(--font);font-weight:600;letter-spacing:0}
+
+/* ---------- amarillo solo donde toca: el resto a cian ---------- */
+.eyebrow--volt,
+.contrast__col--after .contrast__tag,
+.mascot-note__bubble p b,
+.logo-wall__item:hover,
+.quiz__res-eyebrow{color:var(--cyan)}
+.hero__cue svg,
+.feature-list svg{color:var(--cyan)}
+.card__icon{
+  background:rgba(46,211,242,.1);border-color:rgba(46,211,242,.28);color:var(--cyan);
+}
+
+/* conmutador de idioma: cuadrado, activo en claro (no amarillo) */
+.lang-switch{border-radius:var(--pill)}
+.lang-switch button{
+  font-family:var(--font);font-stretch:75%;font-weight:700;font-size:.8rem;
+  letter-spacing:.02em;border-radius:3px;
+}
+.lang-switch button[aria-pressed='true']{background:var(--text);color:var(--bg)}

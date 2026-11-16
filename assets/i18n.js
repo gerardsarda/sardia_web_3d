@@ -51,11 +51,17 @@
     /* ===== inicio: hero ===== */
     "Consultoría de datos e inteligencia artificial": { ca: "Consultoria de dades i intel·ligència artificial", en: "Data and artificial intelligence consultancy" },
     "Domina las nuevas corrientes": { ca: "Domina els nous corrents", en: "Master the new currents" },
+    "Domina": { ca: "Domina", en: "Master" },
+    "las nuevas corrientes": { ca: "els nous corrents", en: "the new currents" },
+    "Qué podemos hacer": { ca: "Què podem fer", en: "What we can do" },
+    "por ti": { ca: "per tu", en: "for you" },
+    "Cuatro escalones, y solo subes si el anterior": { ca: "Quatre esglaons, i només puges si l'anterior", en: "Four steps, and you only move up if the last one" },
+    "ha funcionado": { ca: "ha funcionat", en: "worked" },
     "Impulsa tu negocio hacia la modernidad": { ca: "Impulsa el teu negoci cap a la modernitat", en: "Move your business into the modern era" },
     "Ordenamos tus datos, conectamos las herramientas que ya usas con nueva tecnología y automatizamos lo que hoy se hace a mano.": { ca: "Ordenem les teves dades, connectem les eines que ja fas servir amb tecnologia nova i automatitzem el que avui es fa a mà.", en: "We organise your data, connect the tools you already use with new technology and automate what's done by hand today." },
     "Solicitar auditoría": { ca: "Sol·licitar auditoria", en: "Request an audit" },
     "Ver servicios": { ca: "Veure serveis", en: "See services" },
-    "Valls · Consultoría de datos e IA": { ca: "Valls · Consultoria de dades i IA", en: "Valls · Data and AI consultancy" },
+    "Consultoría de datos e IA en Valls": { ca: "Consultoria de dades i IA a Valls", en: "Data and AI consultancy in Valls" },
     "Consultoría de datos e inteligencia artificial en Valls. Ordenamos tus datos y automatizamos lo que hoy se hace a mano.": { ca: "Consultoria de dades i intel·ligència artificial a Valls. Ordenem les teves dades i automatitzem el que avui es fa a mà.", en: "Data and artificial intelligence consultancy in Valls. We organise your data and automate what's done by hand today." },
     "Descubre qué servicio te encaja": { ca: "Descobreix quin servei t'encaixa", en: "Find out which service fits you" },
     "Hablar con nosotros": { ca: "Parlar amb nosaltres", en: "Talk to us" },
@@ -462,11 +468,11 @@
       ".lang-switch{display:inline-flex;align-items:center;gap:1px;background:var(--surface-2);" +
       "border:1px solid var(--line);border-radius:var(--pill);padding:3px;flex-shrink:0}" +
       ".lang-switch button{appearance:none;-webkit-appearance:none;background:transparent;border:0;" +
-      "cursor:pointer;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:.6875rem;" +
-      "font-weight:500;letter-spacing:.06em;color:var(--text-dim);padding:6px 9px;border-radius:var(--pill);" +
+      "cursor:pointer;font-family:'Archivo',sans-serif;font-stretch:75%;font-size:.8rem;" +
+      "font-weight:700;letter-spacing:.02em;color:var(--text-dim);padding:6px 9px;border-radius:3px;" +
       "line-height:1;transition:color .2s var(--ease),background .2s var(--ease)}" +
       ".lang-switch button:hover{color:var(--text)}" +
-      ".lang-switch button[aria-pressed='true']{background:var(--volt);color:#04212C}" +
+      ".lang-switch button[aria-pressed='true']{background:var(--text);color:var(--bg)}" +
       "@media (max-width:400px){.lang-switch button{padding:10px 8px;letter-spacing:.03em}}";
     var st = document.createElement("style");
     st.setAttribute("data-i18n-style", "1");

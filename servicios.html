@@ -26,7 +26,7 @@
 <meta name="twitter:image" content="https://sardia.es/assets/logo_nombre.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
 <style id="sardia-css">
 /* ============================================================
    SardIA — sistema de diseño
@@ -836,6 +836,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
   ]
 }
 </script>
+<link rel="stylesheet" href="assets/type.css">
 </head>
 <body>
 
@@ -892,7 +893,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
       <div class="svc-intro">
         <div class="svc-intro__title">
           <span class="eyebrow">Catálogo</span>
-          <h2>Qué podemos hacer por ti</h2>
+          <h2>Qué podemos hacer <span class="hl--volt">por ti</span></h2>
         </div>
       </div>
 
@@ -908,7 +909,9 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
 
         <div class="svc-tab is-active" id="datos" role="tabpanel" aria-labelledby="tab-datos">
           <figure class="svc-tab__media">
-            <img src="assets/dashboard-monitor.jpg" alt="Cuadro de mando con los indicadores del negocio actualizándose solo desde las fuentes de datos" loading="lazy">
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/dashboard-monitor.jpg" aria-label="Demostración de un cuadro de mando con los indicadores del negocio actualizándose solo">
+              <source src="assets/servicio-datos-bi.mp4" type="video/mp4">
+            </video>
           </figure>
           <div class="svc-tab__grid">
             <div class="svc-tab__intro">
@@ -935,7 +938,9 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
 
         <div class="svc-tab" id="automatizacion" role="tabpanel" aria-labelledby="tab-automatizacion" hidden>
           <figure class="svc-tab__media">
-            <img src="assets/agentes-panel.jpg" alt="Panel de agentes IA atendiendo conversaciones de clientes en tiempo real" loading="lazy">
+            <video autoplay muted loop playsinline preload="metadata" poster="assets/agentes-panel.jpg" aria-label="Demostración de agentes IA y automatizaciones atendiendo tareas del negocio">
+              <source src="assets/servicio-agentes-ia.mp4" type="video/mp4">
+            </video>
           </figure>
           <div class="svc-tab__grid">
             <div class="svc-tab__intro">
@@ -1072,7 +1077,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">El recorrido</span>
-        <h2>Cuatro escalones, y solo subes si el anterior ha funcionado</h2>
+        <h2>Cuatro escalones, y solo subes si el anterior <span class="hl--volt">ha funcionado</span></h2>
       </div>
 
       <div class="stack">
