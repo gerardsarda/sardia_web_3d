@@ -106,7 +106,7 @@ h4{font-family:var(--font);font-stretch:75%;font-weight:700;letter-spacing:0}
 @media (max-width:760px){
   h2{font-size:clamp(1.75rem,7.4vw,2.1rem)}
   .display{font-size:clamp(2rem,9vw,2.5rem)}
-  .hero__beat--intro h1{font-size:clamp(2.4rem,11vw,2.85rem);line-height:.95}
+  .hero__beat--intro h1{font-size:clamp(3rem,14vw,3.6rem);line-height:.92}
   .hero__beat h2{font-size:clamp(1.5rem,6.4vw,1.8rem)}
   .hero__beat .lead,
   .hero__beat--intro .lead{font-size:.95rem;margin-top:14px}
