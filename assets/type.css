@@ -99,3 +99,20 @@ h4{font-family:var(--font);font-stretch:75%;font-weight:700;letter-spacing:0}
   letter-spacing:.02em;border-radius:3px;
 }
 .lang-switch button[aria-pressed='true']{background:var(--text);color:var(--bg)}
+
+/* ---------- móvil: escala tipográfica contenida ----------
+   En pantallas estrechas los mínimos de clamp() dejaban el titular y la
+   pastilla ocupando todo el ancho y restaban protagonismo al botón. */
+@media (max-width:760px){
+  h2{font-size:clamp(1.75rem,7.4vw,2.1rem)}
+  .display{font-size:clamp(2rem,9vw,2.5rem)}
+  .hero__beat--intro h1{font-size:clamp(2.4rem,11vw,2.85rem);line-height:.95}
+  .hero__beat h2{font-size:clamp(1.5rem,6.4vw,1.8rem)}
+  .hero__beat .lead,
+  .hero__beat--intro .lead{font-size:.95rem;margin-top:14px}
+  .hero-pill{font-size:.72rem;padding:6px 11px;margin-bottom:18px;letter-spacing:.04em}
+  .eyebrow{font-size:.82rem}
+  .hero__beat--intro .btn-row{margin-top:26px;align-items:center}
+  /* el botón se ajusta a su texto en vez de estirarse a todo el ancho */
+  .hero__beat--intro .btn-row .btn{width:auto;align-self:center;padding-inline:22px}
+}
