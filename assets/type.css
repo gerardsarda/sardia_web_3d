@@ -118,3 +118,8 @@ h4{font-family:var(--font);font-stretch:75%;font-weight:700;letter-spacing:0}
   /* el botón se ajusta a su texto en vez de estirarse a todo el ancho */
   .hero__beat--intro .btn-row .btn{width:auto;align-self:center;padding-inline:22px}
 }
+
+/* enlaces legales del pie y del formulario */
+.footer__legal a{color:var(--text-dim);transition:color .2s}
+.footer__legal a:hover,.footer__legal a[aria-current="page"]{color:var(--cyan)}
+.consent a{color:var(--cyan);text-decoration:underline;text-underline-offset:2px}

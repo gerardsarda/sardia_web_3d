@@ -2,7 +2,7 @@
 
 > Consultoría de datos e inteligencia artificial para empresas de cualquier tamaño. Ordenamos tus datos, conectamos las herramientas que ya usas y automatizamos lo que hoy se hace a mano. Domina las nuevas corrientes.
 
-SardIA es una consultoría fundada por Gerard Sardà Calull (Analista de Datos e IA), con base en el Camp de Tarragona (Cataluña, España). Trabaja en Tarragona, las Terres de l'Ebre y el resto de Cataluña, y también en remoto. Contacto: hola@sardia.es
+SardIA es una consultoría fundada por Gerard Sardà Calull (Analista de Datos e IA), con base en el Camp de Tarragona (Cataluña, España). Trabaja en Tarragona, las Terres de l'Ebre y el resto de Cataluña, y también en remoto. Contacto: gerard@sardia.es
 
 ## Servicios
 

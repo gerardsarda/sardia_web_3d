@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — SardIA</title>
+<meta name="description" content="Cómo trata SardIA los datos personales que recibe a través del formulario de contacto de sardia.es.">
+<link rel="icon" type="image/png" href="assets/favicon-180.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<meta name="robots" content="index, follow">
+<meta name="author" content="SardIA">
+<link rel="canonical" href="https://sardia.es/privacidad.html">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SardIA">
+<meta property="og:locale" content="es_ES">
+<meta property="og:url" content="https://sardia.es/privacidad.html">
+<meta property="og:title" content="Política de privacidad — SardIA">
+<meta property="og:description" content="Cómo trata SardIA los datos personales que recibe a través del formulario de contacto de sardia.es.">
+<meta property="og:image" content="https://sardia.es/assets/logo_nombre.png">
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Política de privacidad — SardIA">
+<meta name="twitter:description" content="Cómo trata SardIA los datos personales que recibe a través del formulario de contacto de sardia.es.">
+<meta name="twitter:image" content="https://sardia.es/assets/logo_nombre.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+<style id="sardia-css">
+/* ============================================================
+   SardIA — sistema de diseño
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;overflow-x:clip}
+body,h1,h2,h3,h4,p,ul,ol,figure,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+img,video,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,textarea,select{font:inherit;color:inherit}
+
+:root{
+  --bg:#061523;
+  --bg-2:#0A2033;
+  --surface:rgba(150,196,226,.055);
+  --surface-2:rgba(150,196,226,.09);
+  --line:rgba(150,196,226,.16);
+  --line-strong:rgba(150,196,226,.32);
+  --text:#E8F1F7;
+  --text-dim:rgba(232,241,247,.66);
+  --text-faint:rgba(232,241,247,.42);
+  --cyan:#2ED3F2;
+  --cyan-deep:#12A8C8;
+  --amber:#F0B44E;
+  --volt:#E4FD12;
+  --r-sm:4px;
+  --r:12px;
+  --r-lg:20px;
+  --pill:999px;
+  --wrap:1180px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.23,1,.32,1);
+  --header-h:72px;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Schibsted Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:17px;
+  line-height:1.6;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:clip;
+}
+
+h1,h2,h3,h4{font-weight:500;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(1.95rem,3.8vw,2.75rem);letter-spacing:-.018em}
+h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
+.lead{font-size:clamp(1.0625rem,1.55vw,1.28rem);line-height:1.55;color:var(--text-dim)}
+
+.eyebrow{
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+  font-size:.75rem;font-weight:500;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--cyan);
+  display:inline-flex;align-items:center;gap:.6em;
+}
+.eyebrow::before{content:"";width:20px;height:1px;background:currentColor;opacity:.6}
+.eyebrow--volt{color:var(--volt)}
+
+.wrap{width:100%;max-width:var(--wrap);margin-inline:auto;padding-inline:24px}
+.section{padding:clamp(72px,9vw,124px) 0;position:relative}
+.section-head{max-width:660px;margin-bottom:clamp(40px,5vw,64px)}
+.section-head h2{margin-top:18px}
+.section-head .lead{margin-top:18px}
+
+.divider{height:1px;background:var(--line);border:0;margin:0}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+  height:48px;padding:0 24px;border-radius:var(--pill);border:1px solid transparent;
+  font-size:.9688rem;font-weight:500;letter-spacing:-.005em;white-space:nowrap;cursor:pointer;
+  transition:transform 160ms var(--ease-out),background .2s var(--ease),border-color .2s var(--ease),box-shadow .2s var(--ease),color .2s var(--ease);
+}
+.btn--primary{background:var(--volt);color:#04212C;box-shadow:inset 0 1px 0 rgba(255,255,255,.4),0 1px 2px rgba(0,0,0,.35)}
+.btn--ghost{background:var(--surface-2);color:var(--text);border-color:var(--line)}
+@media (hover:hover) and (pointer:fine){
+  .btn--primary:hover{background:#F3FF5C;transform:translateY(-1px);box-shadow:0 10px 30px -12px rgba(228,253,18,.7)}
+  .btn--ghost:hover{background:rgba(150,196,226,.16);border-color:var(--line-strong);transform:translateY(-1px)}
+}
+.btn:active,.burger:active{transform:translateY(0) scale(.97);transition-duration:100ms}
+.btn--primary:active{box-shadow:0 0 0 0 rgba(228,253,18,0)}
+.btn:focus-visible,.burger:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}
+.btn--sm{height:40px;padding:0 18px;font-size:.9063rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+
+.header{
+  position:sticky;top:0;z-index:50;height:var(--header-h);
+  background:rgba(6,21,35,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+.header__inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;flex-shrink:0}
+.brand img{height:46px;width:auto}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{
+  padding:8px 14px;border-radius:var(--pill);font-size:.9375rem;color:var(--text-dim);
+  transition:color .2s var(--ease),background .2s var(--ease);
+}
+.nav a:hover{color:var(--text);background:var(--surface)}
+.nav a[aria-current="page"]{color:var(--text);background:var(--surface-2)}
+.header__cta{display:flex;align-items:center;gap:10px}
+.burger{
+  display:none;width:42px;height:42px;align-items:center;justify-content:center;
+  background:var(--surface-2);border:1px solid var(--line);border-radius:var(--pill);cursor:pointer;
+}
+.burger svg{width:18px;height:18px}
+.mobile-nav{display:none;position:fixed;top:var(--header-h);left:0;right:0;z-index:49;max-height:calc(100vh - var(--header-h));max-height:calc(100dvh - var(--header-h));overflow-y:auto;overscroll-behavior:contain;border-bottom:1px solid var(--line);background:var(--bg-2);box-shadow:0 24px 40px -20px rgba(0,0,0,.6)}
+.mobile-nav.is-open{display:block}
+.mobile-nav ul{padding:12px 0 20px}
+.mobile-nav a{display:block;padding:13px 0;font-size:1.0625rem;border-bottom:1px solid var(--line)}
+.mobile-nav .btn{display:flex;margin-top:18px;width:100%;border-bottom:0;padding:0 24px}
+
+.page-hero{
+  padding:clamp(64px,9vw,112px) 0 clamp(48px,6vw,72px);
+  border-bottom:1px solid var(--line);position:relative;isolation:isolate;overflow:hidden;
+}
+.page-hero::before{
+  content:"";position:absolute;z-index:1;top:-260px;left:50%;transform:translateX(-50%);
+  width:min(1000px,120vw);height:620px;pointer-events:none;
+  background:radial-gradient(ellipse at center,rgba(46,211,242,.13),transparent 66%);
+}
+.page-hero .wrap{position:relative;z-index:2}
+.page-hero h1{margin-top:20px;font-size:clamp(2.25rem,4.8vw,3.4rem)}
+.page-hero .lead{margin-top:20px;max-width:62ch}
+
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:24px 48px 24px 0;position:relative;
+  font-size:1.125rem;font-weight:500;letter-spacing:-.012em;
+  transition:color .2s var(--ease);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--cyan)}
+.faq summary::after{
+  content:"";position:absolute;right:6px;top:50%;width:11px;height:11px;
+  border-right:1.5px solid var(--cyan);border-bottom:1.5px solid var(--cyan);
+  transform:translateY(-70%) rotate(45deg);transition:transform .3s var(--ease);
+}
+.faq details[open] summary::after{transform:translateY(-25%) rotate(-135deg)}
+.faq p{padding:0 40px 26px 0;color:var(--text-dim);max-width:70ch}
+
+.cta{
+  border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(40px,6vw,72px);
+  background:
+    radial-gradient(ellipse at 20% 0%,rgba(46,211,242,.14),transparent 58%),
+    radial-gradient(ellipse at 90% 100%,rgba(240,180,78,.09),transparent 55%),
+    var(--bg-2);
+  text-align:center;position:relative;overflow:hidden;isolation:isolate;
+}
+.cta__body{position:relative;z-index:2}
+.cta h2{max-width:20ch;margin-inline:auto}
+.cta .lead{max-width:52ch;margin:20px auto 0}
+.cta .btn-row{justify-content:center;margin-top:34px}
+
+/* CTA compacto con fondo marino */
+.cta{
+  padding:clamp(26px,3.6vw,40px) clamp(22px,4vw,48px);
+  background:
+    radial-gradient(circle at 12% 78%,rgba(120,220,255,.16) 0 3px,transparent 4px),
+    radial-gradient(circle at 18% 62%,rgba(120,220,255,.12) 0 2px,transparent 3px),
+    radial-gradient(circle at 86% 70%,rgba(120,220,255,.14) 0 4px,transparent 5px),
+    radial-gradient(circle at 80% 48%,rgba(120,220,255,.1) 0 2px,transparent 3px),
+    radial-gradient(circle at 93% 30%,rgba(120,220,255,.1) 0 3px,transparent 4px),
+    linear-gradient(105deg,transparent 28%,rgba(46,211,242,.07) 36%,transparent 46%),
+    linear-gradient(80deg,transparent 52%,rgba(46,211,242,.06) 60%,transparent 70%),
+    radial-gradient(ellipse at 50% -10%,rgba(46,211,242,.22),transparent 60%),
+    linear-gradient(180deg,#0B3552 0%,#08243C 55%,#041525 100%);
+}
+.cta__mark{display:block;margin-inline:auto}
+.cta__mark--mascot{width:clamp(96px,11vw,128px);margin-bottom:6px;filter:drop-shadow(0 14px 28px rgba(46,211,242,.3))}
+.cta h2{font-size:clamp(1.35rem,2.4vw,1.8rem);max-width:26ch}
+.cta .lead{font-size:.9375rem;max-width:60ch;margin-top:12px}
+.cta .btn-row{margin-top:22px}
+/* CTA en fila: mascota | texto | botones */
+.cta{text-align:left}
+.cta__body{
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;
+  grid-template-areas:"mark title btns" "mark lead btns";
+  column-gap:clamp(18px,3vw,36px);align-items:center;
+}
+.cta__mark--mascot{grid-area:mark;width:clamp(84px,9vw,112px);margin:0}
+.cta h2{grid-area:title;max-width:none;margin:0;align-self:end}
+.cta .lead{grid-area:lead;max-width:62ch;margin:8px 0 0;align-self:start}
+.cta .btn-row{grid-area:btns;margin:0;justify-content:flex-end;flex-wrap:wrap}
+@media (max-width:900px){
+  .cta{text-align:center}
+  .cta__body{grid-template-columns:1fr;grid-template-areas:"mark" "title" "lead" "btns";row-gap:6px;justify-items:center}
+  .cta__mark--mascot{margin:0 auto 4px}
+  .cta .lead{margin-inline:auto}
+  .cta .btn-row{justify-content:center;margin-top:16px}
+}
+
+.footer{border-top:1px solid var(--line);padding:clamp(56px,7vw,80px) 0 36px;background:var(--bg)}
+.footer__top{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px}
+.footer__brand img{height:36px;margin-bottom:20px}
+.footer__brand p{color:var(--text-dim);font-size:.9375rem;max-width:38ch}
+.footer h4{
+  font-family:"JetBrains Mono",ui-monospace,monospace;font-size:.6875rem;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--text-faint);margin-bottom:18px;
+}
+.footer li{margin-bottom:11px}
+.footer li a{font-size:.9375rem;color:var(--text-dim);transition:color .2s var(--ease)}
+.footer li a:hover{color:var(--cyan)}
+.footer__bottom{
+  margin-top:56px;padding-top:24px;border-top:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;
+  font-size:.8125rem;color:var(--text-faint);
+}
+
+@media (max-width:960px){
+  .footer__top{grid-template-columns:1fr 1fr;gap:40px}
+  .footer__brand{grid-column:1/-1}
+}
+@media (max-width:860px){
+  .nav,.header__cta .btn{display:none}
+  .burger{display:flex}
+}
+@media (max-width:680px){
+  body{font-size:16px}
+  .footer__top{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation:none!important;transition-duration:.01ms!important}
+}
+</style>
+<style>
+.legal{max-width:760px}
+.legal h2{font-size:clamp(1.25rem,2vw,1.5rem);margin:44px 0 14px}
+.legal h2:first-child{margin-top:0}
+.legal p,.legal li{color:var(--text-dim)}
+.legal p+p{margin-top:12px}
+.legal ul{margin:12px 0 0;padding-left:1.2em;list-style:disc}
+.legal li+li{margin-top:8px}
+.legal strong{color:var(--text);font-weight:500}
+.legal a{color:var(--cyan);text-decoration:underline;text-underline-offset:3px}
+.legal dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 24px;margin-top:4px}
+.legal dt{color:var(--text-faint)}
+.legal dd{color:var(--text)}
+.legal .updated{margin-top:48px;font-size:.875rem;color:var(--text-faint)}
+@media (max-width:560px){.legal dl{grid-template-columns:1fr;gap:2px}.legal dd{margin-bottom:10px}}
+</style>
+<link rel="stylesheet" href="assets/scroll-fx.css">
+<link rel="stylesheet" href="assets/type.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html" aria-label="SardIA — inicio">
+      <img src="assets/logo6_hor.png" alt="SardIA">
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="header__cta">
+      <a class="btn btn--primary btn--sm" href="contacto.html">Reserva una llamada</a>
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" data-menu-toggle>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" data-menu-panel>
+  <div class="wrap">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <a class="btn btn--primary" href="contacto.html">Reserva una llamada</a>
+  </div>
+</div>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow eyebrow--volt">Privacidad</span>
+      <h1>Política de privacidad</h1>
+      <p class="lead">Qué datos recogemos en esta web, para qué, quién los trata y cómo puedes ejercer tus derechos.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="legal">
+        <h2>1. Responsable del tratamiento</h2>
+        <dl>
+          <dt>Responsable</dt><dd>Gerard Sarda Calull (trabajador autónomo)</dd>
+          <dt>NIF</dt><dd>49319199T</dd>
+          <dt>Domicilio</dt><dd>Av. del Fornas, 13, 2.º 3.ª, 43800 Valls (Tarragona)</dd>
+          <dt>Nombre comercial</dt><dd>SardIA</dd>
+          <dt>Email de contacto y protección de datos</dt><dd><a href="mailto:gerard@sardia.es">gerard@sardia.es</a></dd>
+        </dl>
+
+        <h2>2. Finalidades del tratamiento</h2>
+        <ul>
+          <li>Gestionar y responder a las solicitudes de información o presupuesto enviadas a través del formulario web.</li>
+          <li>Proteger el formulario frente a envíos automatizados (spam y bots).</li>
+          <li>En caso de convertirse en cliente, gestionar la relación contractual (comunicaciones, facturación, prestación del servicio).</li>
+        </ul>
+        <p>SardIA no utiliza los datos recogidos por el formulario para ninguna finalidad distinta de las indicadas y no los usa para enviar comunicaciones comerciales.</p>
+
+        <h2>3. Base legal del tratamiento</h2>
+        <ul>
+          <li>Art. 6.1.b RGPD — aplicación de medidas precontractuales a petición del interesado (responder a la solicitud enviada).</li>
+          <li>Art. 6.1.f RGPD — interés legítimo en proteger el formulario y el sitio web frente a abusos (verificación anti-spam).</li>
+          <li>Art. 6.1.b y 6.1.c RGPD — ejecución del contrato y cumplimiento de obligaciones legales (fiscales y contables) una vez el interesado es cliente.</li>
+        </ul>
+
+        <h2>4. Destinatarios y encargados del tratamiento</h2>
+        <p>SardIA se apoya en proveedores tecnológicos que actúan como encargados del tratamiento, es decir, tratan los datos por cuenta de SardIA y nunca para fines propios:</p>
+        <ul>
+          <li><strong>Supabase</strong> — base de datos donde se guardan las solicitudes del formulario (servidores en Reino Unido).</li>
+          <li><strong>Cloudflare Turnstile</strong> — verificación anti-spam del formulario. Para comprobar que quien envía es una persona, procesa datos técnicos del navegador y la dirección IP. No se usa para publicidad.</li>
+          <li><strong>GitHub Pages</strong> — alojamiento del sitio web. Como cualquier servidor web, registra la dirección IP de las visitas por motivos de seguridad.</li>
+        </ul>
+        <p>Además, para mostrar la web el navegador descarga tipografías de <strong>Google Fonts</strong> y librerías de <strong>jsDelivr</strong>, lo que implica comunicar a esos servicios la dirección IP del visitante.</p>
+        <p>El formulario no utiliza inteligencia artificial ni plataformas de automatización: los datos se guardan mediante desarrollo propio. SardIA no cede ni vende los datos a terceros.</p>
+
+        <h2>5. Transferencias internacionales</h2>
+        <p>Supabase aloja los datos en el <strong>Reino Unido</strong>, país que cuenta con una decisión de adecuación de la Comisión Europea (art. 45 RGPD). Cloudflare, GitHub y Google son empresas de EE. UU. certificadas en el <strong>Marco de Privacidad de Datos UE-EE. UU.</strong> (Data Privacy Framework), que también cuenta con decisión de adecuación, y además ofrecen Cláusulas Contractuales Tipo (art. 46 RGPD).</p>
+
+        <h2>6. Uso de inteligencia artificial</h2>
+        <p>SardIA no utiliza actualmente sistemas de inteligencia artificial para tratar las solicitudes recibidas a través del formulario. Si en el futuro se incorporan, se informará de forma expresa conforme al art. 50 del Reglamento (UE) de Inteligencia Artificial y se actualizará esta política.</p>
+
+        <h2>7. Plazo de conservación</h2>
+        <ul>
+          <li>Solicitudes que no derivan en relación comercial: 12 meses desde el último contacto; después se suprimen o anonimizan.</li>
+          <li>Datos de clientes: durante la relación contractual y, después, durante los plazos legales de prescripción (con carácter general, 4 años a efectos tributarios y hasta 6 años a efectos mercantiles).</li>
+        </ul>
+
+        <h2>8. Carácter de los datos solicitados</h2>
+        <p>Los campos obligatorios del formulario (nombre y email) son necesarios para poder gestionar la solicitud; sin ellos no se puede atender. El resto de campos son voluntarios.</p>
+
+        <h2>9. Decisiones automatizadas</h2>
+        <p>SardIA no toma decisiones basadas únicamente en tratamiento automatizado, incluida la elaboración de perfiles, que produzcan efectos jurídicos sobre el interesado o le afecten significativamente.</p>
+
+        <h2>10. Delegado de Protección de Datos</h2>
+        <p>SardIA no está obligada a designar un Delegado de Protección de Datos (art. 37 RGPD). Cualquier cuestión sobre protección de datos puede dirigirse a <a href="mailto:gerard@sardia.es">gerard@sardia.es</a>.</p>
+
+        <h2>11. Tus derechos</h2>
+        <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad, así como retirar tu consentimiento en cualquier momento, escribiendo a <a href="mailto:gerard@sardia.es">gerard@sardia.es</a>. Responderemos en el plazo máximo de un mes, prorrogable dos meses más en casos complejos. Si consideras que tus derechos no se han atendido, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" rel="noopener" target="_blank">www.aepd.es</a>).</p>
+
+        <h2>12. Medidas de seguridad</h2>
+        <p>SardIA aplica medidas técnicas y organizativas adecuadas al riesgo del tratamiento, como el cifrado de las comunicaciones (HTTPS) y de los datos almacenados, y el acceso restringido al titular.</p>
+
+        <h2>13. Cookies</h2>
+        <p>Este sitio web no utiliza cookies de analítica ni de publicidad. Si en el futuro se incorporan, se publicará una Política de cookies y se pedirá el consentimiento previo.</p>
+
+        <h2>14. Actualizaciones de esta política</h2>
+        <p>Esta política puede actualizarse para adaptarse a novedades legislativas o cambios en el servicio. La versión vigente es siempre la publicada en este sitio web.</p>
+        <p class="updated">Última actualización: 26 de noviembre de 2026</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo6_hor.png" alt="SardIA">
+        <p>Consultoría de datos e inteligencia artificial. Domina las nuevas corrientes: Impulsa tu negocio hacia la modernidad</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html#auditoria">Auditoría de procesos</a></li>
+          <li><a href="servicios.html#automatizacion">Automatización de procesos</a></li>
+          <li><a href="servicios.html#datos">Datos y cuadros de mando</a></li>
+          <li><a href="servicios.html#crm">CRM y ERP automatizados</a></li>
+          <li><a href="servicios.html#formacion">Formación</a></li>
+          <li><a href="servicios.html#ml">Predicción de negocio</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Sard<span style="color:var(--volt)">IA</span></h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="faq.html">Preguntas frecuentes</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 SardIA. Todos los derechos reservados.</span>
+      <span class="footer__legal"><a href="aviso-legal.html">Aviso legal</a> · <a href="privacidad.html" aria-current="page">Política de privacidad</a></span>
+      <span>Datos, automatización e inteligencia artificial</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.querySelector('[data-menu-toggle]');
+  var panel = document.querySelector('[data-menu-panel]');
+  if(!btn || !panel) return;
+  btn.addEventListener('click', function(){
+    var open = panel.classList.toggle('is-open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+  });
+})();
+</script>
+
+<script src="assets/scroll-fx.js" defer></script>
+<script src="assets/i18n.js" defer></script>
+</body>
+</html>

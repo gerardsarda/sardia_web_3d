@@ -82,7 +82,7 @@
     }).catch(function (err) {
       console.error('Error al enviar el lead a Supabase:', err);
       if (window.turnstile) window.turnstile.reset();
-      showStatus('error', 'No hemos podido enviar el formulario. Escríbenos directamente a hola@sardia.es o al +34 678 149 225.');
+      showStatus('error', 'No hemos podido enviar el formulario. Escríbenos directamente a gerard@sardia.es o al +34 678 149 225.');
     }).finally(function () {
       btn.disabled = false;
       btn.textContent = btnLabel;
