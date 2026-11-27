@@ -458,6 +458,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
 .form{display:grid;gap:18px}
 .field{display:grid;gap:8px}
 .field label{font-size:.875rem;color:var(--text-dim);font-weight:500}
+.field-optional{color:var(--text-faint);font-weight:400}
 .field input,.field textarea,.field select{
   width:100%;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-sm);
   padding:13px 14px;font-size:1rem;color:var(--text);
@@ -729,7 +730,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
               </div>
               <div class="field">
                 <label for="empresa">Empresa</label>
-                <input id="empresa" name="empresa" type="text" autocomplete="organization">
+                <input id="empresa" name="empresa" type="text" autocomplete="organization" required>
               </div>
             </div>
 
@@ -740,17 +741,17 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
               </div>
               <div class="field">
                 <label for="telefono">Teléfono</label>
-                <input id="telefono" name="telefono" type="tel" autocomplete="tel">
+                <input id="telefono" name="telefono" type="tel" autocomplete="tel" required>
               </div>
             </div>
 
             <div class="field">
-              <label for="sector">Sector</label>
+              <label for="sector">Sector <span class="field-optional">(opcional)</span></label>
               <input id="sector" name="sector" type="text">
             </div>
 
             <div class="field">
-              <label for="tamano">Tamaño del equipo</label>
+              <label for="tamano">Tamaño del equipo <span class="field-optional">(opcional)</span></label>
               <select id="tamano" name="tamano">
                 <option value="" disabled selected>Selecciona una opción</option>
                 <option>Solo yo</option>
@@ -763,7 +764,7 @@ h3{font-size:1.3125rem;letter-spacing:-.012em;line-height:1.25}
 
             <div class="field">
               <label for="contexto">¿Qué parte del día a día os lleva más tiempo?</label>
-              <textarea id="contexto" name="contexto"></textarea>
+              <textarea id="contexto" name="contexto" required></textarea>
             </div>
 
             <label class="consent">

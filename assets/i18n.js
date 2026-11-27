@@ -281,7 +281,7 @@
     "Sector": { ca: "Sector", en: "Sector" },
     "Clínica dental, taller, asesoría, comercio…": { ca: "Clínica dental, taller, gestoria, comerç…", en: "Dental clinic, workshop, agency, shop…" },
     "Tamaño del equipo": { ca: "Mida de l'equip", en: "Team size" },
-    "Selecciona una opción": { ca: "Selecciona una opció", en: "Select an option" },
+    "(opcional)": { ca: "(opcional)", en: "(optional)" },    "Selecciona una opción": { ca: "Selecciona una opció", en: "Select an option" },
     "Solo yo": { ca: "Només jo", en: "Just me" },
     "2 – 5 personas": { ca: "2 – 5 persones", en: "2 – 5 people" },
     "6 – 15 personas": { ca: "6 – 15 persones", en: "6 – 15 people" },
